@@ -29,3 +29,26 @@ python main.py drop STUDENT_UUID COURSE_UUID
 python -m pytest -q --cov --cov-report=json --junitxml=junit.xml --cov-fail-under=80
 ```
 Windows: `.venv\Scripts\Activate.ps1`. DATA_PATH задаёт файл SQLite, по умолчанию university.sqlite3. В Modular исходники разделены на domain/application/infrastructure/presentation; тесты в tests/. MIT License.
+
+
+## Дополнения практики №7
+
+`STORAGE=sqlite|json` выбирает адаптер, `DATA_PATH` задаёт путь к файлу. Например:
+```bash
+STORAGE=json DATA_PATH=university.json python main.py add-student "Анна"
+python main.py export STUDENT_UUID plan.csv
+STORAGE=sqlite python -m pytest -q --cov --cov-report=json --junitxml=junit.xml --cov-fail-under=80
+STORAGE=json python -m pytest -q --cov --cov-report=json --junitxml=junit.xml --cov-fail-under=80
+python scripts/check_layers.py
+radon cc . -a -s
+python scripts/collect_metrics.py . metrics.json
+```
+PowerShell: `$env:STORAGE="json"; $env:DATA_PATH="university.json"` перед запуском. Оба адаптера используют разные файлы; автоматического переноса уже созданных записей нет. Переключение — эксперимент замены механизма хранения, а не миграция данных.
+
+CSV содержит course_id, title, credits, grade; незаполненная оценка — пустая ячейка. Формат UTF-8 BOM, экранирование через csv.writer.
+
+CI запускает Ruff, pytest-cov ≥80%, radon, проверку архитектуры; матрица SQLite/JSON. Измеренные метрики и coverage/JUnit/HTML сохраняются артефактами. В PR бот публикует отдельную сводку для каждого backend.
+
+Данные экспериментов и методика: docs/experiments.json и docs/metrics-method.md. Время поиска — реальный запуск rg; время изменений — автоматизированная запись файлов, без времени обдумывания и проверки. Это не измерение скорости человека.
+
+Архитектура и C4: [docs/architecture.md](docs/architecture.md). Контейнер DI находится в src/infrastructure/di/container.py, точка сборки — src/infrastructure/bootstrap.py.

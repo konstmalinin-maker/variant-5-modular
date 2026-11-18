@@ -253,3 +253,32 @@ def test_cli_export(enrolled, tmp_path, monkeypatch, capsys):
     path = tmp_path / "out.csv"
     assert main(["export", s.id, str(path)]) == 0
     assert "Экспортировано: 1" in capsys.readouterr().out
+
+
+def test_json_atomic_replace(tmp_path):
+    from src.infrastructure.persistence.json_repository import JSONRepository
+
+    repo = JSONRepository(tmp_path / "n.json")
+    repo.save(State())
+    before = repo.path.read_bytes()
+    with patch("src.infrastructure.persistence.json_repository.os.replace", side_effect=OSError("disk")):
+        with pytest.raises(StorageError):
+            repo.save(State())
+    assert repo.path.read_bytes() == before and not list(tmp_path.glob("*.tmp"))
+
+
+def test_bad_json(tmp_path):
+    from src.infrastructure.persistence.json_repository import JSONRepository
+
+    path = tmp_path / "n.json"
+    path.write_text("{")
+    with pytest.raises(StorageError):
+        JSONRepository(path).load()
+    with pytest.raises(StorageError):
+        JSONRepository(tmp_path / "missing" / "n.json").save(State())
+
+
+def test_unknown_backend(tmp_path, monkeypatch):
+    monkeypatch.setenv("STORAGE", "unknown")
+    with pytest.raises(ValidationError):
+        build_service(tmp_path / "n.data")

@@ -1,0 +1,333 @@
+{
+    "__main__": {
+        "bacon": 0,
+        "imports": [
+            "src",
+            "src.application",
+            "src.application.services",
+            "src.application.services.university_service",
+            "src.application.use_cases",
+            "src.application.use_cases.export_csv",
+            "src.domain",
+            "src.domain.entities",
+            "src.domain.entities.university",
+            "src.domain.repositories",
+            "src.domain.repositories.university_repository",
+            "src.domain.validation",
+            "src.infrastructure",
+            "src.infrastructure.bootstrap",
+            "src.infrastructure.di",
+            "src.infrastructure.di.container",
+            "src.infrastructure.persistence",
+            "src.infrastructure.persistence.json_repository",
+            "src.infrastructure.persistence.sqlite_repository",
+            "src.presentation",
+            "src.presentation.cli",
+            "src.presentation.cli.main"
+        ],
+        "name": "__main__",
+        "path": null
+    },
+    "src": {
+        "bacon": 1,
+        "imported_by": [
+            "__main__",
+            "src.application.services.university_service",
+            "src.application.use_cases.export_csv",
+            "src.domain.repositories.university_repository",
+            "src.domain.validation",
+            "src.infrastructure.bootstrap",
+            "src.infrastructure.persistence.json_repository",
+            "src.infrastructure.persistence.sqlite_repository",
+            "src.presentation.cli.main"
+        ],
+        "name": "src",
+        "path": "/workspace/variant-5-modular/src/__init__.py"
+    },
+    "src.application": {
+        "bacon": 1,
+        "imported_by": [
+            "__main__",
+            "src.application.use_cases.export_csv",
+            "src.infrastructure.bootstrap",
+            "src.presentation.cli.main"
+        ],
+        "name": "src.application",
+        "path": "/workspace/variant-5-modular/src/application/__init__.py"
+    },
+    "src.application.services": {
+        "bacon": 1,
+        "imported_by": [
+            "__main__",
+            "src.application.use_cases.export_csv",
+            "src.infrastructure.bootstrap"
+        ],
+        "name": "src.application.services",
+        "path": "/workspace/variant-5-modular/src/application/services/__init__.py"
+    },
+    "src.application.services.university_service": {
+        "bacon": 1,
+        "imported_by": [
+            "__main__",
+            "src.application.use_cases.export_csv",
+            "src.infrastructure.bootstrap"
+        ],
+        "imports": [
+            "src",
+            "src.domain",
+            "src.domain.entities",
+            "src.domain.entities.university",
+            "src.domain.repositories",
+            "src.domain.repositories.university_repository",
+            "src.domain.validation"
+        ],
+        "name": "src.application.services.university_service",
+        "path": "/workspace/variant-5-modular/src/application/services/university_service.py"
+    },
+    "src.application.use_cases": {
+        "bacon": 1,
+        "imported_by": [
+            "__main__",
+            "src.presentation.cli.main"
+        ],
+        "name": "src.application.use_cases",
+        "path": "/workspace/variant-5-modular/src/application/use_cases/__init__.py"
+    },
+    "src.application.use_cases.export_csv": {
+        "bacon": 1,
+        "imported_by": [
+            "__main__",
+            "src.presentation.cli.main"
+        ],
+        "imports": [
+            "src",
+            "src.application",
+            "src.application.services",
+            "src.application.services.university_service"
+        ],
+        "name": "src.application.use_cases.export_csv",
+        "path": "/workspace/variant-5-modular/src/application/use_cases/export_csv.py"
+    },
+    "src.domain": {
+        "bacon": 1,
+        "imported_by": [
+            "__main__",
+            "src.application.services.university_service",
+            "src.domain.repositories.university_repository",
+            "src.domain.validation",
+            "src.infrastructure.bootstrap",
+            "src.infrastructure.persistence.json_repository",
+            "src.infrastructure.persistence.sqlite_repository",
+            "src.presentation.cli.main"
+        ],
+        "name": "src.domain",
+        "path": "/workspace/variant-5-modular/src/domain/__init__.py"
+    },
+    "src.domain.entities": {
+        "bacon": 1,
+        "imported_by": [
+            "__main__",
+            "src.application.services.university_service",
+            "src.domain.repositories.university_repository",
+            "src.domain.validation",
+            "src.infrastructure.bootstrap",
+            "src.infrastructure.persistence.json_repository",
+            "src.infrastructure.persistence.sqlite_repository",
+            "src.presentation.cli.main"
+        ],
+        "name": "src.domain.entities",
+        "path": "/workspace/variant-5-modular/src/domain/entities/__init__.py"
+    },
+    "src.domain.entities.university": {
+        "bacon": 1,
+        "imported_by": [
+            "__main__",
+            "src.application.services.university_service",
+            "src.domain.repositories.university_repository",
+            "src.domain.validation",
+            "src.infrastructure.bootstrap",
+            "src.infrastructure.persistence.json_repository",
+            "src.infrastructure.persistence.sqlite_repository",
+            "src.presentation.cli.main"
+        ],
+        "name": "src.domain.entities.university",
+        "path": "/workspace/variant-5-modular/src/domain/entities/university.py"
+    },
+    "src.domain.repositories": {
+        "bacon": 1,
+        "imported_by": [
+            "__main__",
+            "src.application.services.university_service",
+            "src.infrastructure.bootstrap",
+            "src.infrastructure.persistence.json_repository",
+            "src.infrastructure.persistence.sqlite_repository"
+        ],
+        "name": "src.domain.repositories",
+        "path": "/workspace/variant-5-modular/src/domain/repositories/__init__.py"
+    },
+    "src.domain.repositories.university_repository": {
+        "bacon": 1,
+        "imported_by": [
+            "__main__",
+            "src.application.services.university_service",
+            "src.infrastructure.bootstrap",
+            "src.infrastructure.persistence.json_repository",
+            "src.infrastructure.persistence.sqlite_repository"
+        ],
+        "imports": [
+            "src",
+            "src.domain",
+            "src.domain.entities",
+            "src.domain.entities.university"
+        ],
+        "name": "src.domain.repositories.university_repository",
+        "path": "/workspace/variant-5-modular/src/domain/repositories/university_repository.py"
+    },
+    "src.domain.validation": {
+        "bacon": 1,
+        "imported_by": [
+            "__main__",
+            "src.application.services.university_service"
+        ],
+        "imports": [
+            "src",
+            "src.domain",
+            "src.domain.entities",
+            "src.domain.entities.university"
+        ],
+        "name": "src.domain.validation",
+        "path": "/workspace/variant-5-modular/src/domain/validation.py"
+    },
+    "src.infrastructure": {
+        "bacon": 1,
+        "imported_by": [
+            "__main__",
+            "src.infrastructure.bootstrap",
+            "src.presentation.cli.main"
+        ],
+        "name": "src.infrastructure",
+        "path": "/workspace/variant-5-modular/src/infrastructure/__init__.py"
+    },
+    "src.infrastructure.bootstrap": {
+        "bacon": 1,
+        "imported_by": [
+            "__main__",
+            "src.presentation.cli.main"
+        ],
+        "imports": [
+            "src",
+            "src.application",
+            "src.application.services",
+            "src.application.services.university_service",
+            "src.domain",
+            "src.domain.entities",
+            "src.domain.entities.university",
+            "src.domain.repositories",
+            "src.domain.repositories.university_repository",
+            "src.infrastructure",
+            "src.infrastructure.di",
+            "src.infrastructure.di.container",
+            "src.infrastructure.persistence",
+            "src.infrastructure.persistence.json_repository",
+            "src.infrastructure.persistence.sqlite_repository"
+        ],
+        "name": "src.infrastructure.bootstrap",
+        "path": "/workspace/variant-5-modular/src/infrastructure/bootstrap.py"
+    },
+    "src.infrastructure.di": {
+        "bacon": 1,
+        "imported_by": [
+            "__main__",
+            "src.infrastructure.bootstrap"
+        ],
+        "name": "src.infrastructure.di",
+        "path": "/workspace/variant-5-modular/src/infrastructure/di/__init__.py"
+    },
+    "src.infrastructure.di.container": {
+        "bacon": 1,
+        "imported_by": [
+            "__main__",
+            "src.infrastructure.bootstrap"
+        ],
+        "name": "src.infrastructure.di.container",
+        "path": "/workspace/variant-5-modular/src/infrastructure/di/container.py"
+    },
+    "src.infrastructure.persistence": {
+        "bacon": 1,
+        "imported_by": [
+            "__main__",
+            "src.infrastructure.bootstrap"
+        ],
+        "name": "src.infrastructure.persistence",
+        "path": "/workspace/variant-5-modular/src/infrastructure/persistence/__init__.py"
+    },
+    "src.infrastructure.persistence.json_repository": {
+        "bacon": 1,
+        "imported_by": [
+            "__main__",
+            "src.infrastructure.bootstrap"
+        ],
+        "imports": [
+            "src",
+            "src.domain",
+            "src.domain.entities",
+            "src.domain.entities.university",
+            "src.domain.repositories",
+            "src.domain.repositories.university_repository"
+        ],
+        "name": "src.infrastructure.persistence.json_repository",
+        "path": "/workspace/variant-5-modular/src/infrastructure/persistence/json_repository.py"
+    },
+    "src.infrastructure.persistence.sqlite_repository": {
+        "bacon": 1,
+        "imported_by": [
+            "__main__",
+            "src.infrastructure.bootstrap"
+        ],
+        "imports": [
+            "src",
+            "src.domain",
+            "src.domain.entities",
+            "src.domain.entities.university",
+            "src.domain.repositories",
+            "src.domain.repositories.university_repository"
+        ],
+        "name": "src.infrastructure.persistence.sqlite_repository",
+        "path": "/workspace/variant-5-modular/src/infrastructure/persistence/sqlite_repository.py"
+    },
+    "src.presentation": {
+        "bacon": 1,
+        "imported_by": [
+            "__main__"
+        ],
+        "name": "src.presentation",
+        "path": "/workspace/variant-5-modular/src/presentation/__init__.py"
+    },
+    "src.presentation.cli": {
+        "bacon": 1,
+        "imported_by": [
+            "__main__"
+        ],
+        "name": "src.presentation.cli",
+        "path": "/workspace/variant-5-modular/src/presentation/cli/__init__.py"
+    },
+    "src.presentation.cli.main": {
+        "bacon": 1,
+        "imported_by": [
+            "__main__"
+        ],
+        "imports": [
+            "src",
+            "src.application",
+            "src.application.use_cases",
+            "src.application.use_cases.export_csv",
+            "src.domain",
+            "src.domain.entities",
+            "src.domain.entities.university",
+            "src.infrastructure",
+            "src.infrastructure.bootstrap"
+        ],
+        "name": "src.presentation.cli.main",
+        "path": "/workspace/variant-5-modular/src/presentation/cli/main.py"
+    }
+}
