@@ -231,3 +231,25 @@ def test_cli_subprocess(tmp_path):
         timeout=10,
     )
     assert result.returncode == 0 and len(result.stdout.strip()) == 36
+
+
+def test_csv_export(enrolled, tmp_path):
+    import csv
+
+    from src.application.use_cases.export_csv import export_to_csv
+
+    svc, s, c = enrolled
+    path = tmp_path / "plan.csv"
+    assert export_to_csv(svc, s.id, path) == 1
+    with path.open(encoding="utf-8-sig", newline="") as stream:
+        rows = list(csv.reader(stream))
+    assert rows[0] == ["course_id", "title", "credits", "grade"]
+    assert rows[1] == [c.id, c.title, str(c.credits), ""]
+
+
+def test_cli_export(enrolled, tmp_path, monkeypatch, capsys):
+    _, s, _ = enrolled
+    monkeypatch.setenv("DATA_PATH", str(tmp_path / "university.sqlite3"))
+    path = tmp_path / "out.csv"
+    assert main(["export", s.id, str(path)]) == 0
+    assert "Экспортировано: 1" in capsys.readouterr().out
