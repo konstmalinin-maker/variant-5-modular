@@ -1,0 +1,660 @@
+verify (json)	Set up job	﻿2026-11-18T09:39:33.9812622Z Current runner version: '2.338.2'
+verify (json)	Set up job	2026-11-18T09:39:33.9834032Z ##[group]Runner Image Provisioner
+verify (json)	Set up job	2026-11-18T09:39:33.9834799Z Hosted Compute Agent
+verify (json)	Set up job	2026-11-18T09:39:33.9835252Z Version: 20261103.629
+verify (json)	Set up job	2026-11-18T09:39:33.9835736Z Commit: 15dbd9ccb5dbf34fae002b6ed1a2670f52df37bc
+verify (json)	Set up job	2026-11-18T09:39:33.9836295Z Build Date: 2026-11-03T17:26:59Z
+verify (json)	Set up job	2026-11-18T09:39:33.9836773Z Worker ID: {9686d1c7-0265-4c9f-91fa-e7d2639333b7}
+verify (json)	Set up job	2026-11-18T09:39:33.9837311Z Region: us-east-1
+verify (json)	Set up job	2026-11-18T09:39:33.9837711Z Cloud: AWS
+verify (json)	Set up job	2026-11-18T09:39:33.9838101Z ##[endgroup]
+verify (json)	Set up job	2026-11-18T09:39:33.9839046Z ##[group]Operating System
+verify (json)	Set up job	2026-11-18T09:39:33.9839488Z Ubuntu
+verify (json)	Set up job	2026-11-18T09:39:33.9840206Z 26.04.1
+verify (json)	Set up job	2026-11-18T09:39:33.9840631Z LTS
+verify (json)	Set up job	2026-11-18T09:39:33.9841128Z ##[endgroup]
+verify (json)	Set up job	2026-11-18T09:39:33.9841549Z ##[group]Runner Image
+verify (json)	Set up job	2026-11-18T09:39:33.9841977Z Image: ubuntu-26.04
+verify (json)	Set up job	2026-11-18T09:39:33.9842404Z Version: 20261111.82.6
+verify (json)	Set up job	2026-11-18T09:39:33.9843166Z Included Software: https://github.com/actions/runner-images/blob/ubuntu26/20261111.82/images/ubuntu/Ubuntu2604-Readme.md
+verify (json)	Set up job	2026-11-18T09:39:33.9844472Z Image Release: https://github.com/actions/runner-images/releases/tag/ubuntu26%2F20261111.82
+verify (json)	Set up job	2026-11-18T09:39:33.9845165Z ##[endgroup]
+verify (json)	Set up job	2026-11-18T09:39:33.9846087Z ##[group]GITHUB_TOKEN Permissions
+verify (json)	Set up job	2026-11-18T09:39:33.9847905Z Contents: read
+verify (json)	Set up job	2026-11-18T09:39:33.9848370Z Metadata: read
+verify (json)	Set up job	2026-11-18T09:39:33.9848779Z PullRequests: write
+verify (json)	Set up job	2026-11-18T09:39:33.9849202Z ##[endgroup]
+verify (json)	Set up job	2026-11-18T09:39:33.9851132Z Secret source: Actions
+verify (json)	Set up job	2026-11-18T09:39:33.9851850Z Cache mode: write
+verify (json)	Set up job	2026-11-18T09:39:33.9852529Z Prepare workflow directory
+verify (json)	Set up job	2026-11-18T09:39:34.0209694Z Prepare all required actions
+verify (json)	Set up job	2026-11-18T09:39:34.0249406Z Getting action download info
+verify (json)	Set up job	2026-11-18T09:39:34.3184003Z Download action repository 'actions/checkout@v4' (SHA:11d5960a326750d5838078e36cf38b85af677262)
+verify (json)	Set up job	2026-11-18T09:39:35.6814711Z Download action repository 'actions/setup-python@v5' (SHA:a26af69be951a213d495a4c3e4e4022e16d87065)
+verify (json)	Set up job	2026-11-18T09:39:35.8516703Z Download action repository 'actions/upload-artifact@v4' (SHA:ea165f8d65b6e75b540449e92b4886f43607fa02)
+verify (json)	Set up job	2026-11-18T09:39:36.0932019Z Download action repository 'actions/github-script@v7' (SHA:f28e40c7f34bde8b3046d885e986cb6290c5673b)
+verify (json)	Set up job	2026-11-18T09:39:36.2882046Z Complete job name: verify (json)
+verify (json)	Run actions/checkout@v4	﻿2026-11-18T09:39:36.3626076Z ##[group]Run actions/checkout@v4
+verify (json)	Run actions/checkout@v4	2026-11-18T09:39:36.3627223Z with:
+verify (json)	Run actions/checkout@v4	2026-11-18T09:39:36.3628049Z   repository: konstmalinin-maker/variant-5-modular
+verify (json)	Run actions/checkout@v4	2026-11-18T09:39:36.3634279Z   token: ***
+verify (json)	Run actions/checkout@v4	2026-11-18T09:39:36.3635043Z   ssh-strict: true
+verify (json)	Run actions/checkout@v4	2026-11-18T09:39:36.3635749Z   ssh-user: git
+verify (json)	Run actions/checkout@v4	2026-11-18T09:39:36.3636468Z   persist-credentials: true
+verify (json)	Run actions/checkout@v4	2026-11-18T09:39:36.3637249Z   clean: true
+verify (json)	Run actions/checkout@v4	2026-11-18T09:39:36.3637955Z   sparse-checkout-cone-mode: true
+verify (json)	Run actions/checkout@v4	2026-11-18T09:39:36.3638839Z   fetch-depth: 1
+verify (json)	Run actions/checkout@v4	2026-11-18T09:39:36.3639525Z   fetch-tags: false
+verify (json)	Run actions/checkout@v4	2026-11-18T09:39:36.3640440Z   show-progress: true
+verify (json)	Run actions/checkout@v4	2026-11-18T09:39:36.3641159Z   lfs: false
+verify (json)	Run actions/checkout@v4	2026-11-18T09:39:36.3641847Z   submodules: false
+verify (json)	Run actions/checkout@v4	2026-11-18T09:39:36.3642574Z   set-safe-directory: true
+verify (json)	Run actions/checkout@v4	2026-11-18T09:39:36.3643405Z   allow-unsafe-pr-checkout: false
+verify (json)	Run actions/checkout@v4	2026-11-18T09:39:36.3644438Z env:
+verify (json)	Run actions/checkout@v4	2026-11-18T09:39:36.3645109Z   STORAGE: json
+verify (json)	Run actions/checkout@v4	2026-11-18T09:39:36.3645779Z ##[endgroup]
+verify (json)	Run actions/checkout@v4	2026-11-18T09:39:38.2364009Z Syncing repository: konstmalinin-maker/variant-5-modular
+verify (json)	Run actions/checkout@v4	2026-11-18T09:39:38.2365528Z ##[group]Getting Git version info
+verify (json)	Run actions/checkout@v4	2026-11-18T09:39:38.2365967Z Working directory is '/home/runner/work/variant-5-modular/variant-5-modular'
+verify (json)	Run actions/checkout@v4	2026-11-18T09:39:38.2366735Z [command]/usr/bin/git version
+verify (json)	Run actions/checkout@v4	2026-11-18T09:39:38.2373958Z git version 2.56.1
+verify (json)	Run actions/checkout@v4	2026-11-18T09:39:38.2386598Z ##[endgroup]
+verify (json)	Run actions/checkout@v4	2026-11-18T09:39:38.2396689Z Temporarily overriding HOME='/home/runner/work/_temp/36dcf81e-a5cf-4f87-9072-7e60484dfe31' before making global git config changes
+verify (json)	Run actions/checkout@v4	2026-11-18T09:39:38.2397684Z Adding repository directory to the temporary git global config as a safe directory
+verify (json)	Run actions/checkout@v4	2026-11-18T09:39:38.2400187Z [command]/usr/bin/git config --global --add safe.directory /home/runner/work/variant-5-modular/variant-5-modular
+verify (json)	Run actions/checkout@v4	2026-11-18T09:39:38.2772357Z Deleting the contents of '/home/runner/work/variant-5-modular/variant-5-modular'
+verify (json)	Run actions/checkout@v4	2026-11-18T09:39:38.2776080Z ##[group]Initializing the repository
+verify (json)	Run actions/checkout@v4	2026-11-18T09:39:38.2780964Z [command]/usr/bin/git init /home/runner/work/variant-5-modular/variant-5-modular
+verify (json)	Run actions/checkout@v4	2026-11-18T09:39:38.2937134Z hint: Using 'master' as the name for the initial branch. This default branch name
+verify (json)	Run actions/checkout@v4	2026-11-18T09:39:38.2937861Z hint: will change to "main" in Git 3.0. To configure the initial branch name
+verify (json)	Run actions/checkout@v4	2026-11-18T09:39:38.2938321Z hint: to use in all of your new repositories, which will suppress this warning,
+verify (json)	Run actions/checkout@v4	2026-11-18T09:39:38.2938808Z hint: call:
+verify (json)	Run actions/checkout@v4	2026-11-18T09:39:38.2939058Z hint:
+verify (json)	Run actions/checkout@v4	2026-11-18T09:39:38.2939431Z hint: 	git config --global init.defaultBranch <name>
+verify (json)	Run actions/checkout@v4	2026-11-18T09:39:38.2939912Z hint:
+verify (json)	Run actions/checkout@v4	2026-11-18T09:39:38.2940281Z hint: Names commonly chosen instead of 'master' are 'main', 'trunk' and
+verify (json)	Run actions/checkout@v4	2026-11-18T09:39:38.2940784Z hint: 'development'. The just-created branch can be renamed via this command:
+verify (json)	Run actions/checkout@v4	2026-11-18T09:39:38.2941181Z hint:
+verify (json)	Run actions/checkout@v4	2026-11-18T09:39:38.2941513Z hint: 	git branch -m <name>
+verify (json)	Run actions/checkout@v4	2026-11-18T09:39:38.2959304Z hint:
+verify (json)	Run actions/checkout@v4	2026-11-18T09:39:38.2959882Z hint: Disable this message with "git config set advice.defaultBranchName false"
+verify (json)	Run actions/checkout@v4	2026-11-18T09:39:38.2960766Z Initialized empty Git repository in /home/runner/work/variant-5-modular/variant-5-modular/.git/
+verify (json)	Run actions/checkout@v4	2026-11-18T09:39:38.2970477Z [command]/usr/bin/git remote add origin https://github.com/konstmalinin-maker/variant-5-modular
+verify (json)	Run actions/checkout@v4	2026-11-18T09:39:38.3034755Z ##[endgroup]
+verify (json)	Run actions/checkout@v4	2026-11-18T09:39:38.3035558Z ##[group]Disabling automatic garbage collection
+verify (json)	Run actions/checkout@v4	2026-11-18T09:39:38.3048064Z [command]/usr/bin/git config --local gc.auto 0
+verify (json)	Run actions/checkout@v4	2026-11-18T09:39:38.3074037Z ##[endgroup]
+verify (json)	Run actions/checkout@v4	2026-11-18T09:39:38.3074785Z ##[group]Setting up auth
+verify (json)	Run actions/checkout@v4	2026-11-18T09:39:38.3079445Z [command]/usr/bin/git config --local --name-only --get-regexp core\.sshCommand
+verify (json)	Run actions/checkout@v4	2026-11-18T09:39:38.3105266Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'core\.sshCommand' && git config --local --unset-all 'core.sshCommand' || :"
+verify (json)	Run actions/checkout@v4	2026-11-18T09:39:38.3597528Z [command]/usr/bin/git config --local --name-only --get-regexp http\.https\:\/\/github\.com\/\.extraheader
+verify (json)	Run actions/checkout@v4	2026-11-18T09:39:38.3622455Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'http\.https\:\/\/github\.com\/\.extraheader' && git config --local --unset-all 'http.https://github.com/.extraheader' || :"
+verify (json)	Run actions/checkout@v4	2026-11-18T09:39:38.3804765Z [command]/usr/bin/git config --local --name-only --get-regexp ^includeIf\.gitdir:
+verify (json)	Run actions/checkout@v4	2026-11-18T09:39:38.3830186Z [command]/usr/bin/git submodule foreach --recursive git config --local --show-origin --name-only --get-regexp remote.origin.url
+verify (json)	Run actions/checkout@v4	2026-11-18T09:39:38.4009193Z [command]/usr/bin/git config --local http.https://github.com/.extraheader AUTHORIZATION: basic ***
+verify (json)	Run actions/checkout@v4	2026-11-18T09:39:38.4035486Z ##[endgroup]
+verify (json)	Run actions/checkout@v4	2026-11-18T09:39:38.4036404Z ##[group]Fetching the repository
+verify (json)	Run actions/checkout@v4	2026-11-18T09:39:38.4042139Z [command]/usr/bin/git -c protocol.version=2 fetch --no-tags --prune --no-recurse-submodules --depth=1 origin +2b7c33a6dd81f41f297018e23ed5634667fd2f65:refs/remotes/origin/main
+verify (json)	Run actions/checkout@v4	2026-11-18T09:39:38.7417505Z From https://github.com/konstmalinin-maker/variant-5-modular
+verify (json)	Run actions/checkout@v4	2026-11-18T09:39:38.7418383Z  * [new ref]         2b7c33a6dd81f41f297018e23ed5634667fd2f65 -> origin/main
+verify (json)	Run actions/checkout@v4	2026-11-18T09:39:38.7422223Z ##[endgroup]
+verify (json)	Run actions/checkout@v4	2026-11-18T09:39:38.7422802Z ##[group]Determining the checkout info
+verify (json)	Run actions/checkout@v4	2026-11-18T09:39:38.7423658Z ##[endgroup]
+verify (json)	Run actions/checkout@v4	2026-11-18T09:39:38.7428733Z [command]/usr/bin/git sparse-checkout disable
+verify (json)	Run actions/checkout@v4	2026-11-18T09:39:38.7478792Z [command]/usr/bin/git config --local --unset-all extensions.worktreeConfig
+verify (json)	Run actions/checkout@v4	2026-11-18T09:39:38.7501382Z ##[group]Checking out the ref
+verify (json)	Run actions/checkout@v4	2026-11-18T09:39:38.7504199Z [command]/usr/bin/git checkout --progress --force -B main refs/remotes/origin/main
+verify (json)	Run actions/checkout@v4	2026-11-18T09:39:38.7604533Z Switched to a new branch 'main'
+verify (json)	Run actions/checkout@v4	2026-11-18T09:39:38.7611521Z branch 'main' set up to track 'origin/main'.
+verify (json)	Run actions/checkout@v4	2026-11-18T09:39:38.7615926Z ##[endgroup]
+verify (json)	Run actions/checkout@v4	2026-11-18T09:39:38.7657102Z [command]/usr/bin/git log -1 --format=%H
+verify (json)	Run actions/checkout@v4	2026-11-18T09:39:38.7674448Z 2b7c33a6dd81f41f297018e23ed5634667fd2f65
+verify (json)	Run actions/setup-python@v5	﻿2026-11-18T09:39:38.7886436Z ##[group]Run actions/setup-python@v5
+verify (json)	Run actions/setup-python@v5	2026-11-18T09:39:38.7886735Z with:
+verify (json)	Run actions/setup-python@v5	2026-11-18T09:39:38.7886973Z   python-version: 3.12
+verify (json)	Run actions/setup-python@v5	2026-11-18T09:39:38.7887236Z   cache: pip
+verify (json)	Run actions/setup-python@v5	2026-11-18T09:39:38.7887474Z   check-latest: false
+verify (json)	Run actions/setup-python@v5	2026-11-18T09:39:38.7889153Z   token: ***
+verify (json)	Run actions/setup-python@v5	2026-11-18T09:39:38.7889379Z   update-environment: true
+verify (json)	Run actions/setup-python@v5	2026-11-18T09:39:38.7889639Z   allow-prereleases: false
+verify (json)	Run actions/setup-python@v5	2026-11-18T09:39:38.7890176Z   freethreaded: false
+verify (json)	Run actions/setup-python@v5	2026-11-18T09:39:38.7890446Z env:
+verify (json)	Run actions/setup-python@v5	2026-11-18T09:39:38.7890647Z   STORAGE: json
+verify (json)	Run actions/setup-python@v5	2026-11-18T09:39:38.7890861Z ##[endgroup]
+verify (json)	Run actions/setup-python@v5	2026-11-18T09:39:38.8960510Z ##[group]Installed versions
+verify (json)	Run actions/setup-python@v5	2026-11-18T09:39:39.3724415Z (node:2455) [DEP0040] DeprecationWarning: The `punycode` module is deprecated. Please use a userland alternative instead.
+verify (json)	Run actions/setup-python@v5	2026-11-18T09:39:39.3725252Z (Use `node --trace-deprecation ...` to show where the warning was created)
+verify (json)	Run actions/setup-python@v5	2026-11-18T09:39:39.3725931Z Successfully set up CPython (3.12.16)
+verify (json)	Run actions/setup-python@v5	2026-11-18T09:39:39.3726703Z ##[endgroup]
+verify (json)	Run actions/setup-python@v5	2026-11-18T09:39:39.5116960Z [command]/opt/hostedtoolcache/Python/3.12.16/x64/bin/pip cache dir
+verify (json)	Run actions/setup-python@v5	2026-11-18T09:39:42.2687018Z /home/runner/.cache/pip
+verify (json)	Run actions/setup-python@v5	2026-11-18T09:39:42.3620562Z pip cache is not found
+verify (json)	Run pip install -r requirements.txt	﻿2026-11-18T09:39:42.3727731Z ##[group]Run pip install -r requirements.txt
+verify (json)	Run pip install -r requirements.txt	2026-11-18T09:39:42.3728174Z [36;1mpip install -r requirements.txt[0m
+verify (json)	Run pip install -r requirements.txt	2026-11-18T09:39:42.3754723Z shell: /usr/bin/bash -e {0}
+verify (json)	Run pip install -r requirements.txt	2026-11-18T09:39:42.3755146Z env:
+verify (json)	Run pip install -r requirements.txt	2026-11-18T09:39:42.3755359Z   STORAGE: json
+verify (json)	Run pip install -r requirements.txt	2026-11-18T09:39:42.3755622Z   pythonLocation: /opt/hostedtoolcache/Python/3.12.16/x64
+verify (json)	Run pip install -r requirements.txt	2026-11-18T09:39:42.3756050Z   PKG_CONFIG_PATH: /opt/hostedtoolcache/Python/3.12.16/x64/lib/pkgconfig
+verify (json)	Run pip install -r requirements.txt	2026-11-18T09:39:42.3756410Z   Python_ROOT_DIR: /opt/hostedtoolcache/Python/3.12.16/x64
+verify (json)	Run pip install -r requirements.txt	2026-11-18T09:39:42.3756747Z   Python2_ROOT_DIR: /opt/hostedtoolcache/Python/3.12.16/x64
+verify (json)	Run pip install -r requirements.txt	2026-11-18T09:39:42.3757091Z   Python3_ROOT_DIR: /opt/hostedtoolcache/Python/3.12.16/x64
+verify (json)	Run pip install -r requirements.txt	2026-11-18T09:39:42.3757446Z   LD_LIBRARY_PATH: /opt/hostedtoolcache/Python/3.12.16/x64/lib
+verify (json)	Run pip install -r requirements.txt	2026-11-18T09:39:42.3757790Z ##[endgroup]
+verify (json)	Run pip install -r requirements.txt	2026-11-18T09:39:43.7808182Z Collecting colorama==0.4.6 (from -r requirements.txt (line 1))
+verify (json)	Run pip install -r requirements.txt	2026-11-18T09:39:43.7989196Z   Downloading colorama-0.4.6-py2.py3-none-any.whl.metadata (17 kB)
+verify (json)	Run pip install -r requirements.txt	2026-11-18T09:39:44.0604128Z Collecting coverage==7.17.3 (from -r requirements.txt (line 2))
+verify (json)	Run pip install -r requirements.txt	2026-11-18T09:39:44.0639177Z   Downloading coverage-7.17.3-cp312-cp312-manylinux1_x86_64.manylinux_2_28_x86_64.manylinux_2_5_x86_64.whl.metadata (8.3 kB)
+verify (json)	Run pip install -r requirements.txt	2026-11-18T09:39:44.3071596Z Collecting dependency-injector==4.49.1 (from -r requirements.txt (line 3))
+verify (json)	Run pip install -r requirements.txt	2026-11-18T09:39:44.3099256Z   Downloading dependency_injector-4.49.1-cp310-abi3-manylinux1_x86_64.manylinux_2_28_x86_64.manylinux_2_5_x86_64.whl.metadata (13 kB)
+verify (json)	Run pip install -r requirements.txt	2026-11-18T09:39:44.3199185Z Collecting iniconfig==2.3.1 (from -r requirements.txt (line 4))
+verify (json)	Run pip install -r requirements.txt	2026-11-18T09:39:44.3222516Z   Downloading iniconfig-2.3.1-py3-none-any.whl.metadata (2.8 kB)
+verify (json)	Run pip install -r requirements.txt	2026-11-18T09:39:44.3302964Z Collecting mando==0.7.1 (from -r requirements.txt (line 5))
+verify (json)	Run pip install -r requirements.txt	2026-11-18T09:39:44.3325345Z   Downloading mando-0.7.1-py2.py3-none-any.whl.metadata (7.4 kB)
+verify (json)	Run pip install -r requirements.txt	2026-11-18T09:39:44.3430009Z Collecting packaging==26.3 (from -r requirements.txt (line 6))
+verify (json)	Run pip install -r requirements.txt	2026-11-18T09:39:44.3452307Z   Downloading packaging-26.3-py3-none-any.whl.metadata (3.5 kB)
+verify (json)	Run pip install -r requirements.txt	2026-11-18T09:39:44.3541895Z Collecting pluggy==1.7.0 (from -r requirements.txt (line 7))
+verify (json)	Run pip install -r requirements.txt	2026-11-18T09:39:44.3563323Z   Downloading pluggy-1.7.0-py3-none-any.whl.metadata (5.0 kB)
+verify (json)	Run pip install -r requirements.txt	2026-11-18T09:39:44.3692891Z Collecting pydeps==3.0.9 (from -r requirements.txt (line 8))
+verify (json)	Run pip install -r requirements.txt	2026-11-18T09:39:44.3723372Z   Downloading pydeps-3.0.9-py3-none-any.whl.metadata (25 kB)
+verify (json)	Run pip install -r requirements.txt	2026-11-18T09:39:44.3850075Z Collecting Pygments==2.21.0 (from -r requirements.txt (line 9))
+verify (json)	Run pip install -r requirements.txt	2026-11-18T09:39:44.3870276Z   Downloading pygments-2.21.0-py3-none-any.whl.metadata (2.5 kB)
+verify (json)	Run pip install -r requirements.txt	2026-11-18T09:39:44.4030849Z Collecting pytest==9.2.0 (from -r requirements.txt (line 10))
+verify (json)	Run pip install -r requirements.txt	2026-11-18T09:39:44.4052554Z   Downloading pytest-9.2.0-py3-none-any.whl.metadata (7.9 kB)
+verify (json)	Run pip install -r requirements.txt	2026-11-18T09:39:44.4152753Z Collecting pytest-cov==7.1.0 (from -r requirements.txt (line 11))
+verify (json)	Run pip install -r requirements.txt	2026-11-18T09:39:44.4174683Z   Downloading pytest_cov-7.1.0-py3-none-any.whl.metadata (32 kB)
+verify (json)	Run pip install -r requirements.txt	2026-11-18T09:39:44.4289039Z Collecting radon==6.0.1 (from -r requirements.txt (line 12))
+verify (json)	Run pip install -r requirements.txt	2026-11-18T09:39:44.4310847Z   Downloading radon-6.0.1-py2.py3-none-any.whl.metadata (8.2 kB)
+verify (json)	Run pip install -r requirements.txt	2026-11-18T09:39:44.6158594Z Collecting ruff==0.17.5 (from -r requirements.txt (line 13))
+verify (json)	Run pip install -r requirements.txt	2026-11-18T09:39:44.6228925Z   Downloading ruff-0.17.5-py3-none-manylinux_2_17_x86_64.manylinux2014_x86_64.whl.metadata (20 kB)
+verify (json)	Run pip install -r requirements.txt	2026-11-18T09:39:44.6347620Z Collecting six==1.17.0 (from -r requirements.txt (line 14))
+verify (json)	Run pip install -r requirements.txt	2026-11-18T09:39:44.6422598Z   Downloading six-1.17.0-py2.py3-none-any.whl.metadata (1.7 kB)
+verify (json)	Run pip install -r requirements.txt	2026-11-18T09:39:44.6505020Z Collecting stdlib-list==0.12.0 (from -r requirements.txt (line 15))
+verify (json)	Run pip install -r requirements.txt	2026-11-18T09:39:44.6530041Z   Downloading stdlib_list-0.12.0-py3-none-any.whl.metadata (3.3 kB)
+verify (json)	Run pip install -r requirements.txt	2026-11-18T09:39:44.6636528Z Collecting typing_extensions==4.16.0 (from -r requirements.txt (line 16))
+verify (json)	Run pip install -r requirements.txt	2026-11-18T09:39:44.6658450Z   Downloading typing_extensions-4.16.0-py3-none-any.whl.metadata (3.3 kB)
+verify (json)	Run pip install -r requirements.txt	2026-11-18T09:39:44.6780727Z Downloading colorama-0.4.6-py2.py3-none-any.whl (25 kB)
+verify (json)	Run pip install -r requirements.txt	2026-11-18T09:39:44.6817868Z Downloading coverage-7.17.3-cp312-cp312-manylinux1_x86_64.manylinux_2_28_x86_64.manylinux_2_5_x86_64.whl (264 kB)
+verify (json)	Run pip install -r requirements.txt	2026-11-18T09:39:44.6883398Z Downloading dependency_injector-4.49.1-cp310-abi3-manylinux1_x86_64.manylinux_2_28_x86_64.manylinux_2_5_x86_64.whl (1.9 MB)
+verify (json)	Run pip install -r requirements.txt	2026-11-18T09:39:44.7014464Z    ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 1.9/1.9 MB 221.4 MB/s  0:00:00
+verify (json)	Run pip install -r requirements.txt	2026-11-18T09:39:44.7037912Z Downloading iniconfig-2.3.1-py3-none-any.whl (7.6 kB)
+verify (json)	Run pip install -r requirements.txt	2026-11-18T09:39:44.7073976Z Downloading mando-0.7.1-py2.py3-none-any.whl (28 kB)
+verify (json)	Run pip install -r requirements.txt	2026-11-18T09:39:44.7110036Z Downloading packaging-26.3-py3-none-any.whl (129 kB)
+verify (json)	Run pip install -r requirements.txt	2026-11-18T09:39:44.7148757Z Downloading pluggy-1.7.0-py3-none-any.whl (27 kB)
+verify (json)	Run pip install -r requirements.txt	2026-11-18T09:39:44.7186409Z Downloading pydeps-3.0.9-py3-none-any.whl (50 kB)
+verify (json)	Run pip install -r requirements.txt	2026-11-18T09:39:44.7227759Z Downloading pygments-2.21.0-py3-none-any.whl (1.3 MB)
+verify (json)	Run pip install -r requirements.txt	2026-11-18T09:39:44.7295451Z    ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 1.3/1.3 MB 189.6 MB/s  0:00:00
+verify (json)	Run pip install -r requirements.txt	2026-11-18T09:39:44.7322246Z Downloading pytest-9.2.0-py3-none-any.whl (411 kB)
+verify (json)	Run pip install -r requirements.txt	2026-11-18T09:39:44.7379238Z Downloading pytest_cov-7.1.0-py3-none-any.whl (22 kB)
+verify (json)	Run pip install -r requirements.txt	2026-11-18T09:39:44.7414887Z Downloading radon-6.0.1-py2.py3-none-any.whl (52 kB)
+verify (json)	Run pip install -r requirements.txt	2026-11-18T09:39:44.7451858Z Downloading ruff-0.17.5-py3-none-manylinux_2_17_x86_64.manylinux2014_x86_64.whl (10.6 MB)
+verify (json)	Run pip install -r requirements.txt	2026-11-18T09:39:44.7801777Z    ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 10.6/10.6 MB 316.5 MB/s  0:00:00
+verify (json)	Run pip install -r requirements.txt	2026-11-18T09:39:44.7828961Z Downloading six-1.17.0-py2.py3-none-any.whl (11 kB)
+verify (json)	Run pip install -r requirements.txt	2026-11-18T09:39:44.7868396Z Downloading stdlib_list-0.12.0-py3-none-any.whl (87 kB)
+verify (json)	Run pip install -r requirements.txt	2026-11-18T09:39:44.7905705Z Downloading typing_extensions-4.16.0-py3-none-any.whl (45 kB)
+verify (json)	Run pip install -r requirements.txt	2026-11-18T09:39:45.0846173Z Installing collected packages: typing_extensions, stdlib-list, six, ruff, Pygments, pluggy, packaging, iniconfig, coverage, colorama, pytest, pydeps, mando, dependency-injector, radon, pytest-cov
+verify (json)	Run pip install -r requirements.txt	2026-11-18T09:39:46.1527967Z 
+verify (json)	Run pip install -r requirements.txt	2026-11-18T09:39:46.1542557Z Successfully installed Pygments-2.21.0 colorama-0.4.6 coverage-7.17.3 dependency-injector-4.49.1 iniconfig-2.3.1 mando-0.7.1 packaging-26.3 pluggy-1.7.0 pydeps-3.0.9 pytest-9.2.0 pytest-cov-7.1.0 radon-6.0.1 ruff-0.17.5 six-1.17.0 stdlib-list-0.12.0 typing_extensions-4.16.0
+verify (json)	Run ruff check .	﻿2026-11-18T09:39:46.2408435Z ##[group]Run ruff check .
+verify (json)	Run ruff check .	2026-11-18T09:39:46.2408738Z [36;1mruff check .[0m
+verify (json)	Run ruff check .	2026-11-18T09:39:46.2428541Z shell: /usr/bin/bash -e {0}
+verify (json)	Run ruff check .	2026-11-18T09:39:46.2428871Z env:
+verify (json)	Run ruff check .	2026-11-18T09:39:46.2429101Z   STORAGE: json
+verify (json)	Run ruff check .	2026-11-18T09:39:46.2429417Z   pythonLocation: /opt/hostedtoolcache/Python/3.12.16/x64
+verify (json)	Run ruff check .	2026-11-18T09:39:46.2429965Z   PKG_CONFIG_PATH: /opt/hostedtoolcache/Python/3.12.16/x64/lib/pkgconfig
+verify (json)	Run ruff check .	2026-11-18T09:39:46.2430413Z   Python_ROOT_DIR: /opt/hostedtoolcache/Python/3.12.16/x64
+verify (json)	Run ruff check .	2026-11-18T09:39:46.2430894Z   Python2_ROOT_DIR: /opt/hostedtoolcache/Python/3.12.16/x64
+verify (json)	Run ruff check .	2026-11-18T09:39:46.2431246Z   Python3_ROOT_DIR: /opt/hostedtoolcache/Python/3.12.16/x64
+verify (json)	Run ruff check .	2026-11-18T09:39:46.2431577Z   LD_LIBRARY_PATH: /opt/hostedtoolcache/Python/3.12.16/x64/lib
+verify (json)	Run ruff check .	2026-11-18T09:39:46.2431881Z ##[endgroup]
+verify (json)	Run ruff check .	2026-11-18T09:39:46.2534372Z All checks passed!
+verify (json)	Run python scripts/check_layers.py	﻿2026-11-18T09:39:46.2564101Z ##[group]Run python scripts/check_layers.py
+verify (json)	Run python scripts/check_layers.py	2026-11-18T09:39:46.2564454Z [36;1mpython scripts/check_layers.py[0m
+verify (json)	Run python scripts/check_layers.py	2026-11-18T09:39:46.2581886Z shell: /usr/bin/bash -e {0}
+verify (json)	Run python scripts/check_layers.py	2026-11-18T09:39:46.2582154Z env:
+verify (json)	Run python scripts/check_layers.py	2026-11-18T09:39:46.2582357Z   STORAGE: json
+verify (json)	Run python scripts/check_layers.py	2026-11-18T09:39:46.2582684Z   pythonLocation: /opt/hostedtoolcache/Python/3.12.16/x64
+verify (json)	Run python scripts/check_layers.py	2026-11-18T09:39:46.2583055Z   PKG_CONFIG_PATH: /opt/hostedtoolcache/Python/3.12.16/x64/lib/pkgconfig
+verify (json)	Run python scripts/check_layers.py	2026-11-18T09:39:46.2583460Z   Python_ROOT_DIR: /opt/hostedtoolcache/Python/3.12.16/x64
+verify (json)	Run python scripts/check_layers.py	2026-11-18T09:39:46.2583797Z   Python2_ROOT_DIR: /opt/hostedtoolcache/Python/3.12.16/x64
+verify (json)	Run python scripts/check_layers.py	2026-11-18T09:39:46.2584131Z   Python3_ROOT_DIR: /opt/hostedtoolcache/Python/3.12.16/x64
+verify (json)	Run python scripts/check_layers.py	2026-11-18T09:39:46.2584502Z   LD_LIBRARY_PATH: /opt/hostedtoolcache/Python/3.12.16/x64/lib
+verify (json)	Run python scripts/check_layers.py	2026-11-18T09:39:46.2584792Z ##[endgroup]
+verify (json)	Run python scripts/check_layers.py	2026-11-18T09:39:46.3531822Z OK: domain/application соблюдают границы
+verify (json)	Run python -m pytest -q --cov --cov-report=json --cov-report=xml --cov-report=html --cov-fail-under=80 --junitxml=junit.xml	﻿2026-11-18T09:39:46.3606845Z ##[group]Run python -m pytest -q --cov --cov-report=json --cov-report=xml --cov-report=html --cov-fail-under=80 --junitxml=junit.xml
+verify (json)	Run python -m pytest -q --cov --cov-report=json --cov-report=xml --cov-report=html --cov-fail-under=80 --junitxml=junit.xml	2026-11-18T09:39:46.3607602Z [36;1mpython -m pytest -q --cov --cov-report=json --cov-report=xml --cov-report=html --cov-fail-under=80 --junitxml=junit.xml[0m
+verify (json)	Run python -m pytest -q --cov --cov-report=json --cov-report=xml --cov-report=html --cov-fail-under=80 --junitxml=junit.xml	2026-11-18T09:39:46.3626598Z shell: /usr/bin/bash -e {0}
+verify (json)	Run python -m pytest -q --cov --cov-report=json --cov-report=xml --cov-report=html --cov-fail-under=80 --junitxml=junit.xml	2026-11-18T09:39:46.3626901Z env:
+verify (json)	Run python -m pytest -q --cov --cov-report=json --cov-report=xml --cov-report=html --cov-fail-under=80 --junitxml=junit.xml	2026-11-18T09:39:46.3627114Z   STORAGE: json
+verify (json)	Run python -m pytest -q --cov --cov-report=json --cov-report=xml --cov-report=html --cov-fail-under=80 --junitxml=junit.xml	2026-11-18T09:39:46.3627400Z   pythonLocation: /opt/hostedtoolcache/Python/3.12.16/x64
+verify (json)	Run python -m pytest -q --cov --cov-report=json --cov-report=xml --cov-report=html --cov-fail-under=80 --junitxml=junit.xml	2026-11-18T09:39:46.3627780Z   PKG_CONFIG_PATH: /opt/hostedtoolcache/Python/3.12.16/x64/lib/pkgconfig
+verify (json)	Run python -m pytest -q --cov --cov-report=json --cov-report=xml --cov-report=html --cov-fail-under=80 --junitxml=junit.xml	2026-11-18T09:39:46.3628132Z   Python_ROOT_DIR: /opt/hostedtoolcache/Python/3.12.16/x64
+verify (json)	Run python -m pytest -q --cov --cov-report=json --cov-report=xml --cov-report=html --cov-fail-under=80 --junitxml=junit.xml	2026-11-18T09:39:46.3628501Z   Python2_ROOT_DIR: /opt/hostedtoolcache/Python/3.12.16/x64
+verify (json)	Run python -m pytest -q --cov --cov-report=json --cov-report=xml --cov-report=html --cov-fail-under=80 --junitxml=junit.xml	2026-11-18T09:39:46.3628848Z   Python3_ROOT_DIR: /opt/hostedtoolcache/Python/3.12.16/x64
+verify (json)	Run python -m pytest -q --cov --cov-report=json --cov-report=xml --cov-report=html --cov-fail-under=80 --junitxml=junit.xml	2026-11-18T09:39:46.3629178Z   LD_LIBRARY_PATH: /opt/hostedtoolcache/Python/3.12.16/x64/lib
+verify (json)	Run python -m pytest -q --cov --cov-report=json --cov-report=xml --cov-report=html --cov-fail-under=80 --junitxml=junit.xml	2026-11-18T09:39:46.3629486Z ##[endgroup]
+verify (json)	Run python -m pytest -q --cov --cov-report=json --cov-report=xml --cov-report=html --cov-fail-under=80 --junitxml=junit.xml	2026-11-18T09:39:48.5624732Z ...............................................................          [100%]
+verify (json)	Run python -m pytest -q --cov --cov-report=json --cov-report=xml --cov-report=html --cov-fail-under=80 --junitxml=junit.xml	2026-11-18T09:39:48.5625777Z ================================ tests coverage ================================
+verify (json)	Run python -m pytest -q --cov --cov-report=json --cov-report=xml --cov-report=html --cov-fail-under=80 --junitxml=junit.xml	2026-11-18T09:39:48.5626994Z _______________ coverage: platform linux, python 3.12.16-final-0 _______________
+verify (json)	Run python -m pytest -q --cov --cov-report=json --cov-report=xml --cov-report=html --cov-fail-under=80 --junitxml=junit.xml	2026-11-18T09:39:48.5627520Z 
+verify (json)	Run python -m pytest -q --cov --cov-report=json --cov-report=xml --cov-report=html --cov-fail-under=80 --junitxml=junit.xml	2026-11-18T09:39:48.5627750Z Coverage HTML written to dir htmlcov
+verify (json)	Run python -m pytest -q --cov --cov-report=json --cov-report=xml --cov-report=html --cov-fail-under=80 --junitxml=junit.xml	2026-11-18T09:39:48.5628337Z Coverage XML written to file coverage.xml
+verify (json)	Run python -m pytest -q --cov --cov-report=json --cov-report=xml --cov-report=html --cov-fail-under=80 --junitxml=junit.xml	2026-11-18T09:39:48.5628934Z Coverage JSON written to file coverage.json
+verify (json)	Run python -m pytest -q --cov --cov-report=json --cov-report=xml --cov-report=html --cov-fail-under=80 --junitxml=junit.xml	2026-11-18T09:39:48.5629604Z Required test coverage of 80% reached. Total coverage: 99.65%
+verify (json)	Run python -m pytest -q --cov --cov-report=json --cov-report=xml --cov-report=html --cov-fail-under=80 --junitxml=junit.xml	2026-11-18T09:39:48.5630583Z 63 passed in 0.99s
+verify (json)	Run radon cc . -a -s > radon.txt	﻿2026-11-18T09:39:48.5992590Z ##[group]Run radon cc . -a -s > radon.txt
+verify (json)	Run radon cc . -a -s > radon.txt	2026-11-18T09:39:48.5992946Z [36;1mradon cc . -a -s > radon.txt[0m
+verify (json)	Run radon cc . -a -s > radon.txt	2026-11-18T09:39:48.6011951Z shell: /usr/bin/bash -e {0}
+verify (json)	Run radon cc . -a -s > radon.txt	2026-11-18T09:39:48.6012378Z env:
+verify (json)	Run radon cc . -a -s > radon.txt	2026-11-18T09:39:48.6012629Z   STORAGE: json
+verify (json)	Run radon cc . -a -s > radon.txt	2026-11-18T09:39:48.6012957Z   pythonLocation: /opt/hostedtoolcache/Python/3.12.16/x64
+verify (json)	Run radon cc . -a -s > radon.txt	2026-11-18T09:39:48.6013478Z   PKG_CONFIG_PATH: /opt/hostedtoolcache/Python/3.12.16/x64/lib/pkgconfig
+verify (json)	Run radon cc . -a -s > radon.txt	2026-11-18T09:39:48.6013900Z   Python_ROOT_DIR: /opt/hostedtoolcache/Python/3.12.16/x64
+verify (json)	Run radon cc . -a -s > radon.txt	2026-11-18T09:39:48.6014325Z   Python2_ROOT_DIR: /opt/hostedtoolcache/Python/3.12.16/x64
+verify (json)	Run radon cc . -a -s > radon.txt	2026-11-18T09:39:48.6014735Z   Python3_ROOT_DIR: /opt/hostedtoolcache/Python/3.12.16/x64
+verify (json)	Run radon cc . -a -s > radon.txt	2026-11-18T09:39:48.6015141Z   LD_LIBRARY_PATH: /opt/hostedtoolcache/Python/3.12.16/x64/lib
+verify (json)	Run radon cc . -a -s > radon.txt	2026-11-18T09:39:48.6015717Z ##[endgroup]
+verify (json)	Run python scripts/collect_metrics.py . metrics.json	﻿2026-11-18T09:39:48.6778391Z ##[group]Run python scripts/collect_metrics.py . metrics.json
+verify (json)	Run python scripts/collect_metrics.py . metrics.json	2026-11-18T09:39:48.6778818Z [36;1mpython scripts/collect_metrics.py . metrics.json[0m
+verify (json)	Run python scripts/collect_metrics.py . metrics.json	2026-11-18T09:39:48.6798377Z shell: /usr/bin/bash -e {0}
+verify (json)	Run python scripts/collect_metrics.py . metrics.json	2026-11-18T09:39:48.6798711Z env:
+verify (json)	Run python scripts/collect_metrics.py . metrics.json	2026-11-18T09:39:48.6798946Z   STORAGE: json
+verify (json)	Run python scripts/collect_metrics.py . metrics.json	2026-11-18T09:39:48.6799244Z   pythonLocation: /opt/hostedtoolcache/Python/3.12.16/x64
+verify (json)	Run python scripts/collect_metrics.py . metrics.json	2026-11-18T09:39:48.6799676Z   PKG_CONFIG_PATH: /opt/hostedtoolcache/Python/3.12.16/x64/lib/pkgconfig
+verify (json)	Run python scripts/collect_metrics.py . metrics.json	2026-11-18T09:39:48.6800202Z   Python_ROOT_DIR: /opt/hostedtoolcache/Python/3.12.16/x64
+verify (json)	Run python scripts/collect_metrics.py . metrics.json	2026-11-18T09:39:48.6800551Z   Python2_ROOT_DIR: /opt/hostedtoolcache/Python/3.12.16/x64
+verify (json)	Run python scripts/collect_metrics.py . metrics.json	2026-11-18T09:39:48.6800892Z   Python3_ROOT_DIR: /opt/hostedtoolcache/Python/3.12.16/x64
+verify (json)	Run python scripts/collect_metrics.py . metrics.json	2026-11-18T09:39:48.6801253Z   LD_LIBRARY_PATH: /opt/hostedtoolcache/Python/3.12.16/x64/lib
+verify (json)	Run python scripts/collect_metrics.py . metrics.json	2026-11-18T09:39:48.6801562Z ##[endgroup]
+verify (json)	Run python scripts/collect_metrics.py . metrics.json	2026-11-18T09:39:48.7214185Z {"py_files": 28, "production_py": 23, "application_folders": 12, "loc_all": 935, "loc_production": 413, "max_file_loc": 284, "internal_imports": 20, "cc_average": 2.733, "cc_blocks": 45, "coverage": 99.64539007092199, "tests": 63, "test_seconds": 0.999}
+verify (json)	Run actions/upload-artifact@v4	﻿2026-11-18T09:39:48.7333231Z ##[group]Run actions/upload-artifact@v4
+verify (json)	Run actions/upload-artifact@v4	2026-11-18T09:39:48.7333533Z with:
+verify (json)	Run actions/upload-artifact@v4	2026-11-18T09:39:48.7333769Z   name: metrics-json
+verify (json)	Run actions/upload-artifact@v4	2026-11-18T09:39:48.7334087Z   path: metrics.json
+verify (json)	Run actions/upload-artifact@v4	radon.txt
+verify (json)	Run actions/upload-artifact@v4	coverage.json
+verify (json)	Run actions/upload-artifact@v4	coverage.xml
+verify (json)	Run actions/upload-artifact@v4	junit.xml
+verify (json)	Run actions/upload-artifact@v4	htmlcov/
+verify (json)	Run actions/upload-artifact@v4	
+verify (json)	Run actions/upload-artifact@v4	2026-11-18T09:39:48.7334487Z   if-no-files-found: warn
+verify (json)	Run actions/upload-artifact@v4	2026-11-18T09:39:48.7334739Z   compression-level: 6
+verify (json)	Run actions/upload-artifact@v4	2026-11-18T09:39:48.7334970Z   overwrite: false
+verify (json)	Run actions/upload-artifact@v4	2026-11-18T09:39:48.7335207Z   include-hidden-files: false
+verify (json)	Run actions/upload-artifact@v4	2026-11-18T09:39:48.7335445Z env:
+verify (json)	Run actions/upload-artifact@v4	2026-11-18T09:39:48.7335656Z   STORAGE: json
+verify (json)	Run actions/upload-artifact@v4	2026-11-18T09:39:48.7335944Z   pythonLocation: /opt/hostedtoolcache/Python/3.12.16/x64
+verify (json)	Run actions/upload-artifact@v4	2026-11-18T09:39:48.7336315Z   PKG_CONFIG_PATH: /opt/hostedtoolcache/Python/3.12.16/x64/lib/pkgconfig
+verify (json)	Run actions/upload-artifact@v4	2026-11-18T09:39:48.7336729Z   Python_ROOT_DIR: /opt/hostedtoolcache/Python/3.12.16/x64
+verify (json)	Run actions/upload-artifact@v4	2026-11-18T09:39:48.7337064Z   Python2_ROOT_DIR: /opt/hostedtoolcache/Python/3.12.16/x64
+verify (json)	Run actions/upload-artifact@v4	2026-11-18T09:39:48.7337395Z   Python3_ROOT_DIR: /opt/hostedtoolcache/Python/3.12.16/x64
+verify (json)	Run actions/upload-artifact@v4	2026-11-18T09:39:48.7337763Z   LD_LIBRARY_PATH: /opt/hostedtoolcache/Python/3.12.16/x64/lib
+verify (json)	Run actions/upload-artifact@v4	2026-11-18T09:39:48.7338113Z ##[endgroup]
+verify (json)	Run actions/upload-artifact@v4	2026-11-18T09:39:48.8610349Z (node:2532) [DEP0040] DeprecationWarning: The `punycode` module is deprecated. Please use a userland alternative instead.
+verify (json)	Run actions/upload-artifact@v4	2026-11-18T09:39:48.8610962Z (Use `node --trace-deprecation ...` to show where the warning was created)
+verify (json)	Run actions/upload-artifact@v4	2026-11-18T09:39:48.8714230Z Multiple search paths detected. Calculating the least common ancestor of all paths
+verify (json)	Run actions/upload-artifact@v4	2026-11-18T09:39:48.8716975Z The least common ancestor is /home/runner/work/variant-5-modular/variant-5-modular. This will be the root directory of the artifact
+verify (json)	Run actions/upload-artifact@v4	2026-11-18T09:39:48.8717956Z With the provided path, there will be 36 files uploaded
+verify (json)	Run actions/upload-artifact@v4	2026-11-18T09:39:48.8718732Z Artifact name is valid!
+verify (json)	Run actions/upload-artifact@v4	2026-11-18T09:39:48.8719221Z Root directory input is valid!
+verify (json)	Run actions/upload-artifact@v4	2026-11-18T09:39:49.0948079Z Beginning upload of artifact content to blob storage
+verify (json)	Run actions/upload-artifact@v4	2026-11-18T09:39:49.1422693Z (node:2532) [DEP0169] DeprecationWarning: `url.parse()` behavior is not standardized and prone to errors that have security implications. Use the WHATWG URL API instead. CVEs are not issued for `url.parse()` vulnerabilities.
+verify (json)	Run actions/upload-artifact@v4	2026-11-18T09:39:49.2580625Z Uploaded bytes 80149
+verify (json)	Run actions/upload-artifact@v4	2026-11-18T09:39:49.2873708Z Finished uploading artifact content to blob storage!
+verify (json)	Run actions/upload-artifact@v4	2026-11-18T09:39:49.2874778Z SHA256 digest of uploaded artifact zip is f9d300c077dfd3df90b5cbed9afbe613a7c70cfad47d95baf7a9508bedc97d25
+verify (json)	Run actions/upload-artifact@v4	2026-11-18T09:39:49.2875630Z Finalizing artifact upload
+verify (json)	Run actions/upload-artifact@v4	2026-11-18T09:39:49.6238168Z Artifact metrics-json.zip successfully finalized. Artifact ID 14415287256
+verify (json)	Run actions/upload-artifact@v4	2026-11-18T09:39:49.6238889Z Artifact metrics-json has been successfully uploaded! Final size is 80149 bytes. Artifact ID is 14415287256
+verify (json)	Run actions/upload-artifact@v4	2026-11-18T09:39:49.6243930Z Artifact download URL: https://github.com/konstmalinin-maker/variant-5-modular/actions/runs/44277978484/artifacts/14415287256
+verify (json)	Post Run actions/setup-python@v5	﻿2026-11-18T09:39:49.6390593Z Post job cleanup.
+verify (json)	Post Run actions/setup-python@v5	2026-11-18T09:39:49.7354497Z (node:2545) [DEP0040] DeprecationWarning: The `punycode` module is deprecated. Please use a userland alternative instead.
+verify (json)	Post Run actions/setup-python@v5	2026-11-18T09:39:49.7355450Z (Use `node --trace-deprecation ...` to show where the warning was created)
+verify (json)	Post Run actions/setup-python@v5	2026-11-18T09:39:49.7508265Z [command]/usr/bin/tar --posix -cf cache.tzst --exclude cache.tzst -P -C /home/runner/work/variant-5-modular/variant-5-modular --files-from manifest.txt --use-compress-program zstdmt
+verify (json)	Post Run actions/setup-python@v5	2026-11-18T09:39:49.8684267Z Failed to save: Unable to reserve cache with key setup-python-Linux-x64-26.04-Ubuntu-python-3.12.16-pip-eb4e4da42035a0f835330d5e1d659c4b85fde82265e7d3ac1a2c8fd7a2b84b0f, another job may be creating this cache.
+verify (json)	Post Run actions/checkout@v4	﻿2026-11-18T09:39:49.8799473Z Post job cleanup.
+verify (json)	Post Run actions/checkout@v4	2026-11-18T09:39:49.9477663Z [command]/usr/bin/git version
+verify (json)	Post Run actions/checkout@v4	2026-11-18T09:39:49.9506661Z git version 2.56.1
+verify (json)	Post Run actions/checkout@v4	2026-11-18T09:39:49.9532069Z Temporarily overriding HOME='/home/runner/work/_temp/e3ec8875-f048-47ee-aa62-3e2c29ab58e7' before making global git config changes
+verify (json)	Post Run actions/checkout@v4	2026-11-18T09:39:49.9533204Z Adding repository directory to the temporary git global config as a safe directory
+verify (json)	Post Run actions/checkout@v4	2026-11-18T09:39:49.9534157Z [command]/usr/bin/git config --global --add safe.directory /home/runner/work/variant-5-modular/variant-5-modular
+verify (json)	Post Run actions/checkout@v4	2026-11-18T09:39:49.9563311Z [command]/usr/bin/git config --local --name-only --get-regexp core\.sshCommand
+verify (json)	Post Run actions/checkout@v4	2026-11-18T09:39:49.9586691Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'core\.sshCommand' && git config --local --unset-all 'core.sshCommand' || :"
+verify (json)	Post Run actions/checkout@v4	2026-11-18T09:39:49.9779656Z [command]/usr/bin/git config --local --name-only --get-regexp http\.https\:\/\/github\.com\/\.extraheader
+verify (json)	Post Run actions/checkout@v4	2026-11-18T09:39:49.9796878Z http.https://github.com/.extraheader
+verify (json)	Post Run actions/checkout@v4	2026-11-18T09:39:49.9804344Z [command]/usr/bin/git config --local --unset-all http.https://github.com/.extraheader
+verify (json)	Post Run actions/checkout@v4	2026-11-18T09:39:49.9826024Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'http\.https\:\/\/github\.com\/\.extraheader' && git config --local --unset-all 'http.https://github.com/.extraheader' || :"
+verify (json)	Post Run actions/checkout@v4	2026-11-18T09:39:50.0024878Z [command]/usr/bin/git config --local --name-only --get-regexp ^includeIf\.gitdir:
+verify (json)	Post Run actions/checkout@v4	2026-11-18T09:39:50.0053441Z [command]/usr/bin/git submodule foreach --recursive git config --local --show-origin --name-only --get-regexp remote.origin.url
+verify (json)	Complete job	﻿2026-11-18T09:39:50.0361797Z Cleaning up orphan processes
+verify (json)	Complete job	2026-11-18T09:39:50.0611378Z ##[warning]Node.js 20 is deprecated. The following actions target Node.js 20 but are being forced to run on Node.js 24: actions/checkout@v4, actions/setup-python@v5, actions/upload-artifact@v4. For more information see: https://github.blog/changelog/2025-09-19-deprecation-of-node-20-on-github-actions-runners/
+verify (sqlite)	Set up job	﻿2026-11-18T09:39:35.3504571Z Current runner version: '2.338.2'
+verify (sqlite)	Set up job	2026-11-18T09:39:35.3529198Z ##[group]Runner Image Provisioner
+verify (sqlite)	Set up job	2026-11-18T09:39:35.3530181Z Hosted Compute Agent
+verify (sqlite)	Set up job	2026-11-18T09:39:35.3531060Z Version: 20261103.629
+verify (sqlite)	Set up job	2026-11-18T09:39:35.3531759Z Commit: 15dbd9ccb5dbf34fae002b6ed1a2670f52df37bc
+verify (sqlite)	Set up job	2026-11-18T09:39:35.3532574Z Build Date: 2026-11-03T17:26:59Z
+verify (sqlite)	Set up job	2026-11-18T09:39:35.3533280Z Worker ID: {c2656747-1301-4502-bca1-4e9a41eae0ea}
+verify (sqlite)	Set up job	2026-11-18T09:39:35.3534060Z Region: westus
+verify (sqlite)	Set up job	2026-11-18T09:39:35.3534693Z Cloud: Azure
+verify (sqlite)	Set up job	2026-11-18T09:39:35.3535281Z ##[endgroup]
+verify (sqlite)	Set up job	2026-11-18T09:39:35.3537086Z ##[group]Operating System
+verify (sqlite)	Set up job	2026-11-18T09:39:35.3537841Z Ubuntu
+verify (sqlite)	Set up job	2026-11-18T09:39:35.3538365Z 26.04.1
+verify (sqlite)	Set up job	2026-11-18T09:39:35.3538953Z LTS
+verify (sqlite)	Set up job	2026-11-18T09:39:35.3539514Z ##[endgroup]
+verify (sqlite)	Set up job	2026-11-18T09:39:35.3540106Z ##[group]Runner Image
+verify (sqlite)	Set up job	2026-11-18T09:39:35.3540909Z Image: ubuntu-26.04
+verify (sqlite)	Set up job	2026-11-18T09:39:35.3541491Z Version: 20261111.196.1
+verify (sqlite)	Set up job	2026-11-18T09:39:35.3542628Z Included Software: https://github.com/actions/runner-images/blob/ubuntu26/20261111.196/images/ubuntu/Ubuntu2604-Readme.md
+verify (sqlite)	Set up job	2026-11-18T09:39:35.3544460Z Image Release: https://github.com/actions/runner-images/releases/tag/ubuntu26%2F20261111.196
+verify (sqlite)	Set up job	2026-11-18T09:39:35.3545472Z ##[endgroup]
+verify (sqlite)	Set up job	2026-11-18T09:39:35.3546756Z ##[group]GITHUB_TOKEN Permissions
+verify (sqlite)	Set up job	2026-11-18T09:39:35.3548660Z Contents: read
+verify (sqlite)	Set up job	2026-11-18T09:39:35.3549299Z Metadata: read
+verify (sqlite)	Set up job	2026-11-18T09:39:35.3549972Z PullRequests: write
+verify (sqlite)	Set up job	2026-11-18T09:39:35.3550759Z ##[endgroup]
+verify (sqlite)	Set up job	2026-11-18T09:39:35.3552880Z Secret source: Actions
+verify (sqlite)	Set up job	2026-11-18T09:39:35.3553891Z Cache mode: write
+verify (sqlite)	Set up job	2026-11-18T09:39:35.3554573Z Prepare workflow directory
+verify (sqlite)	Set up job	2026-11-18T09:39:35.4087222Z Prepare all required actions
+verify (sqlite)	Set up job	2026-11-18T09:39:35.4135724Z Getting action download info
+verify (sqlite)	Set up job	2026-11-18T09:39:35.8031887Z Download action repository 'actions/checkout@v4' (SHA:11d5960a326750d5838078e36cf38b85af677262)
+verify (sqlite)	Set up job	2026-11-18T09:39:35.9218628Z Download action repository 'actions/setup-python@v5' (SHA:a26af69be951a213d495a4c3e4e4022e16d87065)
+verify (sqlite)	Set up job	2026-11-18T09:39:35.9803931Z Download action repository 'actions/upload-artifact@v4' (SHA:ea165f8d65b6e75b540449e92b4886f43607fa02)
+verify (sqlite)	Set up job	2026-11-18T09:39:36.0695984Z Download action repository 'actions/github-script@v7' (SHA:f28e40c7f34bde8b3046d885e986cb6290c5673b)
+verify (sqlite)	Set up job	2026-11-18T09:39:36.4869414Z Complete job name: verify (sqlite)
+verify (sqlite)	Run actions/checkout@v4	﻿2026-11-18T09:39:36.5705140Z ##[group]Run actions/checkout@v4
+verify (sqlite)	Run actions/checkout@v4	2026-11-18T09:39:36.5706288Z with:
+verify (sqlite)	Run actions/checkout@v4	2026-11-18T09:39:36.5706850Z   repository: konstmalinin-maker/variant-5-modular
+verify (sqlite)	Run actions/checkout@v4	2026-11-18T09:39:36.5710722Z   token: ***
+verify (sqlite)	Run actions/checkout@v4	2026-11-18T09:39:36.5711181Z   ssh-strict: true
+verify (sqlite)	Run actions/checkout@v4	2026-11-18T09:39:36.5711630Z   ssh-user: git
+verify (sqlite)	Run actions/checkout@v4	2026-11-18T09:39:36.5712084Z   persist-credentials: true
+verify (sqlite)	Run actions/checkout@v4	2026-11-18T09:39:36.5712622Z   clean: true
+verify (sqlite)	Run actions/checkout@v4	2026-11-18T09:39:36.5713074Z   sparse-checkout-cone-mode: true
+verify (sqlite)	Run actions/checkout@v4	2026-11-18T09:39:36.5713607Z   fetch-depth: 1
+verify (sqlite)	Run actions/checkout@v4	2026-11-18T09:39:36.5714050Z   fetch-tags: false
+verify (sqlite)	Run actions/checkout@v4	2026-11-18T09:39:36.5714509Z   show-progress: true
+verify (sqlite)	Run actions/checkout@v4	2026-11-18T09:39:36.5714965Z   lfs: false
+verify (sqlite)	Run actions/checkout@v4	2026-11-18T09:39:36.5715386Z   submodules: false
+verify (sqlite)	Run actions/checkout@v4	2026-11-18T09:39:36.5715852Z   set-safe-directory: true
+verify (sqlite)	Run actions/checkout@v4	2026-11-18T09:39:36.5716389Z   allow-unsafe-pr-checkout: false
+verify (sqlite)	Run actions/checkout@v4	2026-11-18T09:39:36.5717208Z env:
+verify (sqlite)	Run actions/checkout@v4	2026-11-18T09:39:36.5717638Z   STORAGE: sqlite
+verify (sqlite)	Run actions/checkout@v4	2026-11-18T09:39:36.5718078Z ##[endgroup]
+verify (sqlite)	Run actions/checkout@v4	2026-11-18T09:39:36.8579538Z Syncing repository: konstmalinin-maker/variant-5-modular
+verify (sqlite)	Run actions/checkout@v4	2026-11-18T09:39:36.8582444Z ##[group]Getting Git version info
+verify (sqlite)	Run actions/checkout@v4	2026-11-18T09:39:36.8583556Z Working directory is '/home/runner/work/variant-5-modular/variant-5-modular'
+verify (sqlite)	Run actions/checkout@v4	2026-11-18T09:39:36.8585792Z [command]/usr/bin/git version
+verify (sqlite)	Run actions/checkout@v4	2026-11-18T09:39:36.8587508Z git version 2.56.1
+verify (sqlite)	Run actions/checkout@v4	2026-11-18T09:39:36.8609764Z ##[endgroup]
+verify (sqlite)	Run actions/checkout@v4	2026-11-18T09:39:36.8624316Z Temporarily overriding HOME='/home/runner/work/_temp/944adc1f-088b-4eef-b1f1-a8e467a82a25' before making global git config changes
+verify (sqlite)	Run actions/checkout@v4	2026-11-18T09:39:36.8627154Z Adding repository directory to the temporary git global config as a safe directory
+verify (sqlite)	Run actions/checkout@v4	2026-11-18T09:39:36.8630045Z [command]/usr/bin/git config --global --add safe.directory /home/runner/work/variant-5-modular/variant-5-modular
+verify (sqlite)	Run actions/checkout@v4	2026-11-18T09:39:36.8703792Z Deleting the contents of '/home/runner/work/variant-5-modular/variant-5-modular'
+verify (sqlite)	Run actions/checkout@v4	2026-11-18T09:39:36.8707252Z ##[group]Initializing the repository
+verify (sqlite)	Run actions/checkout@v4	2026-11-18T09:39:36.8712204Z [command]/usr/bin/git init /home/runner/work/variant-5-modular/variant-5-modular
+verify (sqlite)	Run actions/checkout@v4	2026-11-18T09:39:36.8834346Z hint: Using 'master' as the name for the initial branch. This default branch name
+verify (sqlite)	Run actions/checkout@v4	2026-11-18T09:39:36.8836833Z hint: will change to "main" in Git 3.0. To configure the initial branch name
+verify (sqlite)	Run actions/checkout@v4	2026-11-18T09:39:36.8839170Z hint: to use in all of your new repositories, which will suppress this warning,
+verify (sqlite)	Run actions/checkout@v4	2026-11-18T09:39:36.8841234Z hint: call:
+verify (sqlite)	Run actions/checkout@v4	2026-11-18T09:39:36.8842344Z hint:
+verify (sqlite)	Run actions/checkout@v4	2026-11-18T09:39:36.8843709Z hint: 	git config --global init.defaultBranch <name>
+verify (sqlite)	Run actions/checkout@v4	2026-11-18T09:39:36.8845271Z hint:
+verify (sqlite)	Run actions/checkout@v4	2026-11-18T09:39:36.8846884Z hint: Names commonly chosen instead of 'master' are 'main', 'trunk' and
+verify (sqlite)	Run actions/checkout@v4	2026-11-18T09:39:36.8848847Z hint: 'development'. The just-created branch can be renamed via this command:
+verify (sqlite)	Run actions/checkout@v4	2026-11-18T09:39:36.8850803Z hint:
+verify (sqlite)	Run actions/checkout@v4	2026-11-18T09:39:36.8851866Z hint: 	git branch -m <name>
+verify (sqlite)	Run actions/checkout@v4	2026-11-18T09:39:36.8853033Z hint:
+verify (sqlite)	Run actions/checkout@v4	2026-11-18T09:39:36.8854510Z hint: Disable this message with "git config set advice.defaultBranchName false"
+verify (sqlite)	Run actions/checkout@v4	2026-11-18T09:39:36.8856917Z Initialized empty Git repository in /home/runner/work/variant-5-modular/variant-5-modular/.git/
+verify (sqlite)	Run actions/checkout@v4	2026-11-18T09:39:36.8865818Z [command]/usr/bin/git remote add origin https://github.com/konstmalinin-maker/variant-5-modular
+verify (sqlite)	Run actions/checkout@v4	2026-11-18T09:39:36.8920186Z ##[endgroup]
+verify (sqlite)	Run actions/checkout@v4	2026-11-18T09:39:36.8922070Z ##[group]Disabling automatic garbage collection
+verify (sqlite)	Run actions/checkout@v4	2026-11-18T09:39:36.8923698Z [command]/usr/bin/git config --local gc.auto 0
+verify (sqlite)	Run actions/checkout@v4	2026-11-18T09:39:36.8960276Z ##[endgroup]
+verify (sqlite)	Run actions/checkout@v4	2026-11-18T09:39:36.8962052Z ##[group]Setting up auth
+verify (sqlite)	Run actions/checkout@v4	2026-11-18T09:39:36.8967732Z [command]/usr/bin/git config --local --name-only --get-regexp core\.sshCommand
+verify (sqlite)	Run actions/checkout@v4	2026-11-18T09:39:36.9004956Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'core\.sshCommand' && git config --local --unset-all 'core.sshCommand' || :"
+verify (sqlite)	Run actions/checkout@v4	2026-11-18T09:39:36.9493311Z [command]/usr/bin/git config --local --name-only --get-regexp http\.https\:\/\/github\.com\/\.extraheader
+verify (sqlite)	Run actions/checkout@v4	2026-11-18T09:39:36.9540794Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'http\.https\:\/\/github\.com\/\.extraheader' && git config --local --unset-all 'http.https://github.com/.extraheader' || :"
+verify (sqlite)	Run actions/checkout@v4	2026-11-18T09:39:36.9818744Z [command]/usr/bin/git config --local --name-only --get-regexp ^includeIf\.gitdir:
+verify (sqlite)	Run actions/checkout@v4	2026-11-18T09:39:36.9854585Z [command]/usr/bin/git submodule foreach --recursive git config --local --show-origin --name-only --get-regexp remote.origin.url
+verify (sqlite)	Run actions/checkout@v4	2026-11-18T09:39:37.0127705Z [command]/usr/bin/git config --local http.https://github.com/.extraheader AUTHORIZATION: basic ***
+verify (sqlite)	Run actions/checkout@v4	2026-11-18T09:39:37.0167685Z ##[endgroup]
+verify (sqlite)	Run actions/checkout@v4	2026-11-18T09:39:37.0168628Z ##[group]Fetching the repository
+verify (sqlite)	Run actions/checkout@v4	2026-11-18T09:39:37.0177569Z [command]/usr/bin/git -c protocol.version=2 fetch --no-tags --prune --no-recurse-submodules --depth=1 origin +2b7c33a6dd81f41f297018e23ed5634667fd2f65:refs/remotes/origin/main
+verify (sqlite)	Run actions/checkout@v4	2026-11-18T09:39:37.4404837Z From https://github.com/konstmalinin-maker/variant-5-modular
+verify (sqlite)	Run actions/checkout@v4	2026-11-18T09:39:37.4407575Z  * [new ref]         2b7c33a6dd81f41f297018e23ed5634667fd2f65 -> origin/main
+verify (sqlite)	Run actions/checkout@v4	2026-11-18T09:39:37.4492971Z ##[endgroup]
+verify (sqlite)	Run actions/checkout@v4	2026-11-18T09:39:37.4495571Z ##[group]Determining the checkout info
+verify (sqlite)	Run actions/checkout@v4	2026-11-18T09:39:37.4499683Z ##[endgroup]
+verify (sqlite)	Run actions/checkout@v4	2026-11-18T09:39:37.4511883Z [command]/usr/bin/git sparse-checkout disable
+verify (sqlite)	Run actions/checkout@v4	2026-11-18T09:39:37.4517219Z [command]/usr/bin/git config --local --unset-all extensions.worktreeConfig
+verify (sqlite)	Run actions/checkout@v4	2026-11-18T09:39:37.4523862Z ##[group]Checking out the ref
+verify (sqlite)	Run actions/checkout@v4	2026-11-18T09:39:37.4526925Z [command]/usr/bin/git checkout --progress --force -B main refs/remotes/origin/main
+verify (sqlite)	Run actions/checkout@v4	2026-11-18T09:39:37.4643158Z Switched to a new branch 'main'
+verify (sqlite)	Run actions/checkout@v4	2026-11-18T09:39:37.4650088Z branch 'main' set up to track 'origin/main'.
+verify (sqlite)	Run actions/checkout@v4	2026-11-18T09:39:37.4658166Z ##[endgroup]
+verify (sqlite)	Run actions/checkout@v4	2026-11-18T09:39:37.4709294Z [command]/usr/bin/git log -1 --format=%H
+verify (sqlite)	Run actions/checkout@v4	2026-11-18T09:39:37.4738641Z 2b7c33a6dd81f41f297018e23ed5634667fd2f65
+verify (sqlite)	Run actions/setup-python@v5	﻿2026-11-18T09:39:37.5169722Z ##[group]Run actions/setup-python@v5
+verify (sqlite)	Run actions/setup-python@v5	2026-11-18T09:39:37.5171356Z with:
+verify (sqlite)	Run actions/setup-python@v5	2026-11-18T09:39:37.5172300Z   python-version: 3.12
+verify (sqlite)	Run actions/setup-python@v5	2026-11-18T09:39:37.5173340Z   cache: pip
+verify (sqlite)	Run actions/setup-python@v5	2026-11-18T09:39:37.5174282Z   check-latest: false
+verify (sqlite)	Run actions/setup-python@v5	2026-11-18T09:39:37.5184135Z   token: ***
+verify (sqlite)	Run actions/setup-python@v5	2026-11-18T09:39:37.5185123Z   update-environment: true
+verify (sqlite)	Run actions/setup-python@v5	2026-11-18T09:39:37.5186291Z   allow-prereleases: false
+verify (sqlite)	Run actions/setup-python@v5	2026-11-18T09:39:37.5187394Z   freethreaded: false
+verify (sqlite)	Run actions/setup-python@v5	2026-11-18T09:39:37.5188377Z env:
+verify (sqlite)	Run actions/setup-python@v5	2026-11-18T09:39:37.5189236Z   STORAGE: sqlite
+verify (sqlite)	Run actions/setup-python@v5	2026-11-18T09:39:37.5190187Z ##[endgroup]
+verify (sqlite)	Run actions/setup-python@v5	2026-11-18T09:39:37.6575907Z ##[group]Installed versions
+verify (sqlite)	Run actions/setup-python@v5	2026-11-18T09:39:37.6686017Z (node:2514) [DEP0040] DeprecationWarning: The `punycode` module is deprecated. Please use a userland alternative instead.
+verify (sqlite)	Run actions/setup-python@v5	2026-11-18T09:39:37.6689247Z (Use `node --trace-deprecation ...` to show where the warning was created)
+verify (sqlite)	Run actions/setup-python@v5	2026-11-18T09:39:37.6692708Z Successfully set up CPython (3.12.16)
+verify (sqlite)	Run actions/setup-python@v5	2026-11-18T09:39:37.6695864Z ##[endgroup]
+verify (sqlite)	Run actions/setup-python@v5	2026-11-18T09:39:37.7507918Z [command]/opt/hostedtoolcache/Python/3.12.16/x64/bin/pip cache dir
+verify (sqlite)	Run actions/setup-python@v5	2026-11-18T09:39:38.0226661Z /home/runner/.cache/pip
+verify (sqlite)	Run actions/setup-python@v5	2026-11-18T09:39:38.2968737Z pip cache is not found
+verify (sqlite)	Run pip install -r requirements.txt	﻿2026-11-18T09:39:38.3168550Z ##[group]Run pip install -r requirements.txt
+verify (sqlite)	Run pip install -r requirements.txt	2026-11-18T09:39:38.3169953Z [36;1mpip install -r requirements.txt[0m
+verify (sqlite)	Run pip install -r requirements.txt	2026-11-18T09:39:38.3229259Z shell: /usr/bin/bash -e {0}
+verify (sqlite)	Run pip install -r requirements.txt	2026-11-18T09:39:38.3230270Z env:
+verify (sqlite)	Run pip install -r requirements.txt	2026-11-18T09:39:38.3231238Z   STORAGE: sqlite
+verify (sqlite)	Run pip install -r requirements.txt	2026-11-18T09:39:38.3232360Z   pythonLocation: /opt/hostedtoolcache/Python/3.12.16/x64
+verify (sqlite)	Run pip install -r requirements.txt	2026-11-18T09:39:38.3234007Z   PKG_CONFIG_PATH: /opt/hostedtoolcache/Python/3.12.16/x64/lib/pkgconfig
+verify (sqlite)	Run pip install -r requirements.txt	2026-11-18T09:39:38.3235658Z   Python_ROOT_DIR: /opt/hostedtoolcache/Python/3.12.16/x64
+verify (sqlite)	Run pip install -r requirements.txt	2026-11-18T09:39:38.3237150Z   Python2_ROOT_DIR: /opt/hostedtoolcache/Python/3.12.16/x64
+verify (sqlite)	Run pip install -r requirements.txt	2026-11-18T09:39:38.3238670Z   Python3_ROOT_DIR: /opt/hostedtoolcache/Python/3.12.16/x64
+verify (sqlite)	Run pip install -r requirements.txt	2026-11-18T09:39:38.3240221Z   LD_LIBRARY_PATH: /opt/hostedtoolcache/Python/3.12.16/x64/lib
+verify (sqlite)	Run pip install -r requirements.txt	2026-11-18T09:39:38.3241658Z ##[endgroup]
+verify (sqlite)	Run pip install -r requirements.txt	2026-11-18T09:39:38.9369422Z Collecting colorama==0.4.6 (from -r requirements.txt (line 1))
+verify (sqlite)	Run pip install -r requirements.txt	2026-11-18T09:39:38.9840050Z   Downloading colorama-0.4.6-py2.py3-none-any.whl.metadata (17 kB)
+verify (sqlite)	Run pip install -r requirements.txt	2026-11-18T09:39:39.4152603Z Collecting coverage==7.17.3 (from -r requirements.txt (line 2))
+verify (sqlite)	Run pip install -r requirements.txt	2026-11-18T09:39:39.4270854Z   Downloading coverage-7.17.3-cp312-cp312-manylinux1_x86_64.manylinux_2_28_x86_64.manylinux_2_5_x86_64.whl.metadata (8.3 kB)
+verify (sqlite)	Run pip install -r requirements.txt	2026-11-18T09:39:39.8124179Z Collecting dependency-injector==4.49.1 (from -r requirements.txt (line 3))
+verify (sqlite)	Run pip install -r requirements.txt	2026-11-18T09:39:39.8247640Z   Downloading dependency_injector-4.49.1-cp310-abi3-manylinux1_x86_64.manylinux_2_28_x86_64.manylinux_2_5_x86_64.whl.metadata (13 kB)
+verify (sqlite)	Run pip install -r requirements.txt	2026-11-18T09:39:39.8362914Z Collecting iniconfig==2.3.1 (from -r requirements.txt (line 4))
+verify (sqlite)	Run pip install -r requirements.txt	2026-11-18T09:39:39.8477479Z   Downloading iniconfig-2.3.1-py3-none-any.whl.metadata (2.8 kB)
+verify (sqlite)	Run pip install -r requirements.txt	2026-11-18T09:39:39.8580483Z Collecting mando==0.7.1 (from -r requirements.txt (line 5))
+verify (sqlite)	Run pip install -r requirements.txt	2026-11-18T09:39:39.8699217Z   Downloading mando-0.7.1-py2.py3-none-any.whl.metadata (7.4 kB)
+verify (sqlite)	Run pip install -r requirements.txt	2026-11-18T09:39:39.8853677Z Collecting packaging==26.3 (from -r requirements.txt (line 6))
+verify (sqlite)	Run pip install -r requirements.txt	2026-11-18T09:39:39.8970085Z   Downloading packaging-26.3-py3-none-any.whl.metadata (3.5 kB)
+verify (sqlite)	Run pip install -r requirements.txt	2026-11-18T09:39:39.9078827Z Collecting pluggy==1.7.0 (from -r requirements.txt (line 7))
+verify (sqlite)	Run pip install -r requirements.txt	2026-11-18T09:39:39.9197291Z   Downloading pluggy-1.7.0-py3-none-any.whl.metadata (5.0 kB)
+verify (sqlite)	Run pip install -r requirements.txt	2026-11-18T09:39:40.0009868Z Collecting pydeps==3.0.9 (from -r requirements.txt (line 8))
+verify (sqlite)	Run pip install -r requirements.txt	2026-11-18T09:39:40.0132419Z   Downloading pydeps-3.0.9-py3-none-any.whl.metadata (25 kB)
+verify (sqlite)	Run pip install -r requirements.txt	2026-11-18T09:39:40.0318682Z Collecting Pygments==2.21.0 (from -r requirements.txt (line 9))
+verify (sqlite)	Run pip install -r requirements.txt	2026-11-18T09:39:40.0438094Z   Downloading pygments-2.21.0-py3-none-any.whl.metadata (2.5 kB)
+verify (sqlite)	Run pip install -r requirements.txt	2026-11-18T09:39:40.0666611Z Collecting pytest==9.2.0 (from -r requirements.txt (line 10))
+verify (sqlite)	Run pip install -r requirements.txt	2026-11-18T09:39:40.0781032Z   Downloading pytest-9.2.0-py3-none-any.whl.metadata (7.9 kB)
+verify (sqlite)	Run pip install -r requirements.txt	2026-11-18T09:39:40.0908336Z Collecting pytest-cov==7.1.0 (from -r requirements.txt (line 11))
+verify (sqlite)	Run pip install -r requirements.txt	2026-11-18T09:39:40.1022578Z   Downloading pytest_cov-7.1.0-py3-none-any.whl.metadata (32 kB)
+verify (sqlite)	Run pip install -r requirements.txt	2026-11-18T09:39:40.1200841Z Collecting radon==6.0.1 (from -r requirements.txt (line 12))
+verify (sqlite)	Run pip install -r requirements.txt	2026-11-18T09:39:40.1319883Z   Downloading radon-6.0.1-py2.py3-none-any.whl.metadata (8.2 kB)
+verify (sqlite)	Run pip install -r requirements.txt	2026-11-18T09:39:40.4435461Z Collecting ruff==0.17.5 (from -r requirements.txt (line 13))
+verify (sqlite)	Run pip install -r requirements.txt	2026-11-18T09:39:40.4557834Z   Downloading ruff-0.17.5-py3-none-manylinux_2_17_x86_64.manylinux2014_x86_64.whl.metadata (20 kB)
+verify (sqlite)	Run pip install -r requirements.txt	2026-11-18T09:39:40.4683889Z Collecting six==1.17.0 (from -r requirements.txt (line 14))
+verify (sqlite)	Run pip install -r requirements.txt	2026-11-18T09:39:40.4800570Z   Downloading six-1.17.0-py2.py3-none-any.whl.metadata (1.7 kB)
+verify (sqlite)	Run pip install -r requirements.txt	2026-11-18T09:39:40.4906260Z Collecting stdlib-list==0.12.0 (from -r requirements.txt (line 15))
+verify (sqlite)	Run pip install -r requirements.txt	2026-11-18T09:39:40.5023755Z   Downloading stdlib_list-0.12.0-py3-none-any.whl.metadata (3.3 kB)
+verify (sqlite)	Run pip install -r requirements.txt	2026-11-18T09:39:40.5161262Z Collecting typing_extensions==4.16.0 (from -r requirements.txt (line 16))
+verify (sqlite)	Run pip install -r requirements.txt	2026-11-18T09:39:40.5275124Z   Downloading typing_extensions-4.16.0-py3-none-any.whl.metadata (3.3 kB)
+verify (sqlite)	Run pip install -r requirements.txt	2026-11-18T09:39:40.5594533Z Downloading colorama-0.4.6-py2.py3-none-any.whl (25 kB)
+verify (sqlite)	Run pip install -r requirements.txt	2026-11-18T09:39:40.5734712Z Downloading coverage-7.17.3-cp312-cp312-manylinux1_x86_64.manylinux_2_28_x86_64.manylinux_2_5_x86_64.whl (264 kB)
+verify (sqlite)	Run pip install -r requirements.txt	2026-11-18T09:39:40.6074428Z Downloading dependency_injector-4.49.1-cp310-abi3-manylinux1_x86_64.manylinux_2_28_x86_64.manylinux_2_5_x86_64.whl (1.9 MB)
+verify (sqlite)	Run pip install -r requirements.txt	2026-11-18T09:39:40.6413002Z    ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 1.9/1.9 MB 55.6 MB/s  0:00:00
+verify (sqlite)	Run pip install -r requirements.txt	2026-11-18T09:39:40.6528735Z Downloading iniconfig-2.3.1-py3-none-any.whl (7.6 kB)
+verify (sqlite)	Run pip install -r requirements.txt	2026-11-18T09:39:40.6675613Z Downloading mando-0.7.1-py2.py3-none-any.whl (28 kB)
+verify (sqlite)	Run pip install -r requirements.txt	2026-11-18T09:39:40.6811805Z Downloading packaging-26.3-py3-none-any.whl (129 kB)
+verify (sqlite)	Run pip install -r requirements.txt	2026-11-18T09:39:40.6948594Z Downloading pluggy-1.7.0-py3-none-any.whl (27 kB)
+verify (sqlite)	Run pip install -r requirements.txt	2026-11-18T09:39:40.7088616Z Downloading pydeps-3.0.9-py3-none-any.whl (50 kB)
+verify (sqlite)	Run pip install -r requirements.txt	2026-11-18T09:39:40.7230527Z Downloading pygments-2.21.0-py3-none-any.whl (1.3 MB)
+verify (sqlite)	Run pip install -r requirements.txt	2026-11-18T09:39:40.7301370Z    ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 1.3/1.3 MB 218.5 MB/s  0:00:00
+verify (sqlite)	Run pip install -r requirements.txt	2026-11-18T09:39:40.7417067Z Downloading pytest-9.2.0-py3-none-any.whl (411 kB)
+verify (sqlite)	Run pip install -r requirements.txt	2026-11-18T09:39:40.7561520Z Downloading pytest_cov-7.1.0-py3-none-any.whl (22 kB)
+verify (sqlite)	Run pip install -r requirements.txt	2026-11-18T09:39:40.7695592Z Downloading radon-6.0.1-py2.py3-none-any.whl (52 kB)
+verify (sqlite)	Run pip install -r requirements.txt	2026-11-18T09:39:40.7833648Z Downloading ruff-0.17.5-py3-none-manylinux_2_17_x86_64.manylinux2014_x86_64.whl (10.6 MB)
+verify (sqlite)	Run pip install -r requirements.txt	2026-11-18T09:39:40.8258769Z    ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 10.6/10.6 MB 262.5 MB/s  0:00:00
+verify (sqlite)	Run pip install -r requirements.txt	2026-11-18T09:39:40.8377128Z Downloading six-1.17.0-py2.py3-none-any.whl (11 kB)
+verify (sqlite)	Run pip install -r requirements.txt	2026-11-18T09:39:40.8519227Z Downloading stdlib_list-0.12.0-py3-none-any.whl (87 kB)
+verify (sqlite)	Run pip install -r requirements.txt	2026-11-18T09:39:40.8657921Z Downloading typing_extensions-4.16.0-py3-none-any.whl (45 kB)
+verify (sqlite)	Run pip install -r requirements.txt	2026-11-18T09:39:40.9890880Z Installing collected packages: typing_extensions, stdlib-list, six, ruff, Pygments, pluggy, packaging, iniconfig, coverage, colorama, pytest, pydeps, mando, dependency-injector, radon, pytest-cov
+verify (sqlite)	Run pip install -r requirements.txt	2026-11-18T09:39:42.5453699Z 
+verify (sqlite)	Run pip install -r requirements.txt	2026-11-18T09:39:42.5474286Z Successfully installed Pygments-2.21.0 colorama-0.4.6 coverage-7.17.3 dependency-injector-4.49.1 iniconfig-2.3.1 mando-0.7.1 packaging-26.3 pluggy-1.7.0 pydeps-3.0.9 pytest-9.2.0 pytest-cov-7.1.0 radon-6.0.1 ruff-0.17.5 six-1.17.0 stdlib-list-0.12.0 typing_extensions-4.16.0
+verify (sqlite)	Run ruff check .	﻿2026-11-18T09:39:42.6288612Z ##[group]Run ruff check .
+verify (sqlite)	Run ruff check .	2026-11-18T09:39:42.6288922Z [36;1mruff check .[0m
+verify (sqlite)	Run ruff check .	2026-11-18T09:39:42.6341146Z shell: /usr/bin/bash -e {0}
+verify (sqlite)	Run ruff check .	2026-11-18T09:39:42.6341400Z env:
+verify (sqlite)	Run ruff check .	2026-11-18T09:39:42.6341584Z   STORAGE: sqlite
+verify (sqlite)	Run ruff check .	2026-11-18T09:39:42.6341867Z   pythonLocation: /opt/hostedtoolcache/Python/3.12.16/x64
+verify (sqlite)	Run ruff check .	2026-11-18T09:39:42.6342307Z   PKG_CONFIG_PATH: /opt/hostedtoolcache/Python/3.12.16/x64/lib/pkgconfig
+verify (sqlite)	Run ruff check .	2026-11-18T09:39:42.6342738Z   Python_ROOT_DIR: /opt/hostedtoolcache/Python/3.12.16/x64
+verify (sqlite)	Run ruff check .	2026-11-18T09:39:42.6343327Z   Python2_ROOT_DIR: /opt/hostedtoolcache/Python/3.12.16/x64
+verify (sqlite)	Run ruff check .	2026-11-18T09:39:42.6343718Z   Python3_ROOT_DIR: /opt/hostedtoolcache/Python/3.12.16/x64
+verify (sqlite)	Run ruff check .	2026-11-18T09:39:42.6344100Z   LD_LIBRARY_PATH: /opt/hostedtoolcache/Python/3.12.16/x64/lib
+verify (sqlite)	Run ruff check .	2026-11-18T09:39:42.6344418Z ##[endgroup]
+verify (sqlite)	Run ruff check .	2026-11-18T09:39:42.6504963Z All checks passed!
+verify (sqlite)	Run python scripts/check_layers.py	﻿2026-11-18T09:39:42.6543505Z ##[group]Run python scripts/check_layers.py
+verify (sqlite)	Run python scripts/check_layers.py	2026-11-18T09:39:42.6543881Z [36;1mpython scripts/check_layers.py[0m
+verify (sqlite)	Run python scripts/check_layers.py	2026-11-18T09:39:42.6589913Z shell: /usr/bin/bash -e {0}
+verify (sqlite)	Run python scripts/check_layers.py	2026-11-18T09:39:42.6590170Z env:
+verify (sqlite)	Run python scripts/check_layers.py	2026-11-18T09:39:42.6590601Z   STORAGE: sqlite
+verify (sqlite)	Run python scripts/check_layers.py	2026-11-18T09:39:42.6590896Z   pythonLocation: /opt/hostedtoolcache/Python/3.12.16/x64
+verify (sqlite)	Run python scripts/check_layers.py	2026-11-18T09:39:42.6591344Z   PKG_CONFIG_PATH: /opt/hostedtoolcache/Python/3.12.16/x64/lib/pkgconfig
+verify (sqlite)	Run python scripts/check_layers.py	2026-11-18T09:39:42.6591777Z   Python_ROOT_DIR: /opt/hostedtoolcache/Python/3.12.16/x64
+verify (sqlite)	Run python scripts/check_layers.py	2026-11-18T09:39:42.6592155Z   Python2_ROOT_DIR: /opt/hostedtoolcache/Python/3.12.16/x64
+verify (sqlite)	Run python scripts/check_layers.py	2026-11-18T09:39:42.6592548Z   Python3_ROOT_DIR: /opt/hostedtoolcache/Python/3.12.16/x64
+verify (sqlite)	Run python scripts/check_layers.py	2026-11-18T09:39:42.6592927Z   LD_LIBRARY_PATH: /opt/hostedtoolcache/Python/3.12.16/x64/lib
+verify (sqlite)	Run python scripts/check_layers.py	2026-11-18T09:39:42.6593241Z ##[endgroup]
+verify (sqlite)	Run python scripts/check_layers.py	2026-11-18T09:39:42.7045747Z OK: domain/application соблюдают границы
+verify (sqlite)	Run python -m pytest -q --cov --cov-report=json --cov-report=xml --cov-report=html --cov-fail-under=80 --junitxml=junit.xml	﻿2026-11-18T09:39:42.7128522Z ##[group]Run python -m pytest -q --cov --cov-report=json --cov-report=xml --cov-report=html --cov-fail-under=80 --junitxml=junit.xml
+verify (sqlite)	Run python -m pytest -q --cov --cov-report=json --cov-report=xml --cov-report=html --cov-fail-under=80 --junitxml=junit.xml	2026-11-18T09:39:42.7129459Z [36;1mpython -m pytest -q --cov --cov-report=json --cov-report=xml --cov-report=html --cov-fail-under=80 --junitxml=junit.xml[0m
+verify (sqlite)	Run python -m pytest -q --cov --cov-report=json --cov-report=xml --cov-report=html --cov-fail-under=80 --junitxml=junit.xml	2026-11-18T09:39:42.7178086Z shell: /usr/bin/bash -e {0}
+verify (sqlite)	Run python -m pytest -q --cov --cov-report=json --cov-report=xml --cov-report=html --cov-fail-under=80 --junitxml=junit.xml	2026-11-18T09:39:42.7178335Z env:
+verify (sqlite)	Run python -m pytest -q --cov --cov-report=json --cov-report=xml --cov-report=html --cov-fail-under=80 --junitxml=junit.xml	2026-11-18T09:39:42.7178521Z   STORAGE: sqlite
+verify (sqlite)	Run python -m pytest -q --cov --cov-report=json --cov-report=xml --cov-report=html --cov-fail-under=80 --junitxml=junit.xml	2026-11-18T09:39:42.7178797Z   pythonLocation: /opt/hostedtoolcache/Python/3.12.16/x64
+verify (sqlite)	Run python -m pytest -q --cov --cov-report=json --cov-report=xml --cov-report=html --cov-fail-under=80 --junitxml=junit.xml	2026-11-18T09:39:42.7179235Z   PKG_CONFIG_PATH: /opt/hostedtoolcache/Python/3.12.16/x64/lib/pkgconfig
+verify (sqlite)	Run python -m pytest -q --cov --cov-report=json --cov-report=xml --cov-report=html --cov-fail-under=80 --junitxml=junit.xml	2026-11-18T09:39:42.7179674Z   Python_ROOT_DIR: /opt/hostedtoolcache/Python/3.12.16/x64
+verify (sqlite)	Run python -m pytest -q --cov --cov-report=json --cov-report=xml --cov-report=html --cov-fail-under=80 --junitxml=junit.xml	2026-11-18T09:39:42.7180070Z   Python2_ROOT_DIR: /opt/hostedtoolcache/Python/3.12.16/x64
+verify (sqlite)	Run python -m pytest -q --cov --cov-report=json --cov-report=xml --cov-report=html --cov-fail-under=80 --junitxml=junit.xml	2026-11-18T09:39:42.7180569Z   Python3_ROOT_DIR: /opt/hostedtoolcache/Python/3.12.16/x64
+verify (sqlite)	Run python -m pytest -q --cov --cov-report=json --cov-report=xml --cov-report=html --cov-fail-under=80 --junitxml=junit.xml	2026-11-18T09:39:42.7180950Z   LD_LIBRARY_PATH: /opt/hostedtoolcache/Python/3.12.16/x64/lib
+verify (sqlite)	Run python -m pytest -q --cov --cov-report=json --cov-report=xml --cov-report=html --cov-fail-under=80 --junitxml=junit.xml	2026-11-18T09:39:42.7181262Z ##[endgroup]
+verify (sqlite)	Run python -m pytest -q --cov --cov-report=json --cov-report=xml --cov-report=html --cov-fail-under=80 --junitxml=junit.xml	2026-11-18T09:39:44.6947838Z ...............................................................          [100%]
+verify (sqlite)	Run python -m pytest -q --cov --cov-report=json --cov-report=xml --cov-report=html --cov-fail-under=80 --junitxml=junit.xml	2026-11-18T09:39:44.6948600Z ================================ tests coverage ================================
+verify (sqlite)	Run python -m pytest -q --cov --cov-report=json --cov-report=xml --cov-report=html --cov-fail-under=80 --junitxml=junit.xml	2026-11-18T09:39:44.6949333Z _______________ coverage: platform linux, python 3.12.16-final-0 _______________
+verify (sqlite)	Run python -m pytest -q --cov --cov-report=json --cov-report=xml --cov-report=html --cov-fail-under=80 --junitxml=junit.xml	2026-11-18T09:39:44.6949836Z 
+verify (sqlite)	Run python -m pytest -q --cov --cov-report=json --cov-report=xml --cov-report=html --cov-fail-under=80 --junitxml=junit.xml	2026-11-18T09:39:44.6950011Z Coverage HTML written to dir htmlcov
+verify (sqlite)	Run python -m pytest -q --cov --cov-report=json --cov-report=xml --cov-report=html --cov-fail-under=80 --junitxml=junit.xml	2026-11-18T09:39:44.6950683Z Coverage XML written to file coverage.xml
+verify (sqlite)	Run python -m pytest -q --cov --cov-report=json --cov-report=xml --cov-report=html --cov-fail-under=80 --junitxml=junit.xml	2026-11-18T09:39:44.6951164Z Coverage JSON written to file coverage.json
+verify (sqlite)	Run python -m pytest -q --cov --cov-report=json --cov-report=xml --cov-report=html --cov-fail-under=80 --junitxml=junit.xml	2026-11-18T09:39:44.6951743Z Required test coverage of 80% reached. Total coverage: 99.29%
+verify (sqlite)	Run python -m pytest -q --cov --cov-report=json --cov-report=xml --cov-report=html --cov-fail-under=80 --junitxml=junit.xml	2026-11-18T09:39:44.6952350Z 63 passed in 1.24s
+verify (sqlite)	Run radon cc . -a -s > radon.txt	﻿2026-11-18T09:39:44.7292045Z ##[group]Run radon cc . -a -s > radon.txt
+verify (sqlite)	Run radon cc . -a -s > radon.txt	2026-11-18T09:39:44.7292422Z [36;1mradon cc . -a -s > radon.txt[0m
+verify (sqlite)	Run radon cc . -a -s > radon.txt	2026-11-18T09:39:44.7341844Z shell: /usr/bin/bash -e {0}
+verify (sqlite)	Run radon cc . -a -s > radon.txt	2026-11-18T09:39:44.7342101Z env:
+verify (sqlite)	Run radon cc . -a -s > radon.txt	2026-11-18T09:39:44.7342296Z   STORAGE: sqlite
+verify (sqlite)	Run radon cc . -a -s > radon.txt	2026-11-18T09:39:44.7342580Z   pythonLocation: /opt/hostedtoolcache/Python/3.12.16/x64
+verify (sqlite)	Run radon cc . -a -s > radon.txt	2026-11-18T09:39:44.7343031Z   PKG_CONFIG_PATH: /opt/hostedtoolcache/Python/3.12.16/x64/lib/pkgconfig
+verify (sqlite)	Run radon cc . -a -s > radon.txt	2026-11-18T09:39:44.7343465Z   Python_ROOT_DIR: /opt/hostedtoolcache/Python/3.12.16/x64
+verify (sqlite)	Run radon cc . -a -s > radon.txt	2026-11-18T09:39:44.7343844Z   Python2_ROOT_DIR: /opt/hostedtoolcache/Python/3.12.16/x64
+verify (sqlite)	Run radon cc . -a -s > radon.txt	2026-11-18T09:39:44.7344227Z   Python3_ROOT_DIR: /opt/hostedtoolcache/Python/3.12.16/x64
+verify (sqlite)	Run radon cc . -a -s > radon.txt	2026-11-18T09:39:44.7344612Z   LD_LIBRARY_PATH: /opt/hostedtoolcache/Python/3.12.16/x64/lib
+verify (sqlite)	Run radon cc . -a -s > radon.txt	2026-11-18T09:39:44.7344933Z ##[endgroup]
+verify (sqlite)	Run python scripts/collect_metrics.py . metrics.json	﻿2026-11-18T09:39:44.8903230Z ##[group]Run python scripts/collect_metrics.py . metrics.json
+verify (sqlite)	Run python scripts/collect_metrics.py . metrics.json	2026-11-18T09:39:44.8903711Z [36;1mpython scripts/collect_metrics.py . metrics.json[0m
+verify (sqlite)	Run python scripts/collect_metrics.py . metrics.json	2026-11-18T09:39:44.8951582Z shell: /usr/bin/bash -e {0}
+verify (sqlite)	Run python scripts/collect_metrics.py . metrics.json	2026-11-18T09:39:44.8951831Z env:
+verify (sqlite)	Run python scripts/collect_metrics.py . metrics.json	2026-11-18T09:39:44.8952022Z   STORAGE: sqlite
+verify (sqlite)	Run python scripts/collect_metrics.py . metrics.json	2026-11-18T09:39:44.8952304Z   pythonLocation: /opt/hostedtoolcache/Python/3.12.16/x64
+verify (sqlite)	Run python scripts/collect_metrics.py . metrics.json	2026-11-18T09:39:44.8952748Z   PKG_CONFIG_PATH: /opt/hostedtoolcache/Python/3.12.16/x64/lib/pkgconfig
+verify (sqlite)	Run python scripts/collect_metrics.py . metrics.json	2026-11-18T09:39:44.8953174Z   Python_ROOT_DIR: /opt/hostedtoolcache/Python/3.12.16/x64
+verify (sqlite)	Run python scripts/collect_metrics.py . metrics.json	2026-11-18T09:39:44.8953555Z   Python2_ROOT_DIR: /opt/hostedtoolcache/Python/3.12.16/x64
+verify (sqlite)	Run python scripts/collect_metrics.py . metrics.json	2026-11-18T09:39:44.8953933Z   Python3_ROOT_DIR: /opt/hostedtoolcache/Python/3.12.16/x64
+verify (sqlite)	Run python scripts/collect_metrics.py . metrics.json	2026-11-18T09:39:44.8954308Z   LD_LIBRARY_PATH: /opt/hostedtoolcache/Python/3.12.16/x64/lib
+verify (sqlite)	Run python scripts/collect_metrics.py . metrics.json	2026-11-18T09:39:44.8954627Z ##[endgroup]
+verify (sqlite)	Run python scripts/collect_metrics.py . metrics.json	2026-11-18T09:39:44.9576748Z {"py_files": 28, "production_py": 23, "application_folders": 12, "loc_all": 935, "loc_production": 413, "max_file_loc": 284, "internal_imports": 20, "cc_average": 2.733, "cc_blocks": 45, "coverage": 99.29078014184397, "tests": 63, "test_seconds": 1.25}
+verify (sqlite)	Run actions/upload-artifact@v4	﻿2026-11-18T09:39:44.9717456Z ##[group]Run actions/upload-artifact@v4
+verify (sqlite)	Run actions/upload-artifact@v4	2026-11-18T09:39:44.9717759Z with:
+verify (sqlite)	Run actions/upload-artifact@v4	2026-11-18T09:39:44.9717950Z   name: metrics-sqlite
+verify (sqlite)	Run actions/upload-artifact@v4	2026-11-18T09:39:44.9718288Z   path: metrics.json
+verify (sqlite)	Run actions/upload-artifact@v4	radon.txt
+verify (sqlite)	Run actions/upload-artifact@v4	coverage.json
+verify (sqlite)	Run actions/upload-artifact@v4	coverage.xml
+verify (sqlite)	Run actions/upload-artifact@v4	junit.xml
+verify (sqlite)	Run actions/upload-artifact@v4	htmlcov/
+verify (sqlite)	Run actions/upload-artifact@v4	
+verify (sqlite)	Run actions/upload-artifact@v4	2026-11-18T09:39:44.9718685Z   if-no-files-found: warn
+verify (sqlite)	Run actions/upload-artifact@v4	2026-11-18T09:39:44.9718969Z   compression-level: 6
+verify (sqlite)	Run actions/upload-artifact@v4	2026-11-18T09:39:44.9719179Z   overwrite: false
+verify (sqlite)	Run actions/upload-artifact@v4	2026-11-18T09:39:44.9719395Z   include-hidden-files: false
+verify (sqlite)	Run actions/upload-artifact@v4	2026-11-18T09:39:44.9719624Z env:
+verify (sqlite)	Run actions/upload-artifact@v4	2026-11-18T09:39:44.9719792Z   STORAGE: sqlite
+verify (sqlite)	Run actions/upload-artifact@v4	2026-11-18T09:39:44.9720052Z   pythonLocation: /opt/hostedtoolcache/Python/3.12.16/x64
+verify (sqlite)	Run actions/upload-artifact@v4	2026-11-18T09:39:44.9720625Z   PKG_CONFIG_PATH: /opt/hostedtoolcache/Python/3.12.16/x64/lib/pkgconfig
+verify (sqlite)	Run actions/upload-artifact@v4	2026-11-18T09:39:44.9721039Z   Python_ROOT_DIR: /opt/hostedtoolcache/Python/3.12.16/x64
+verify (sqlite)	Run actions/upload-artifact@v4	2026-11-18T09:39:44.9721407Z   Python2_ROOT_DIR: /opt/hostedtoolcache/Python/3.12.16/x64
+verify (sqlite)	Run actions/upload-artifact@v4	2026-11-18T09:39:44.9721778Z   Python3_ROOT_DIR: /opt/hostedtoolcache/Python/3.12.16/x64
+verify (sqlite)	Run actions/upload-artifact@v4	2026-11-18T09:39:44.9722169Z   LD_LIBRARY_PATH: /opt/hostedtoolcache/Python/3.12.16/x64/lib
+verify (sqlite)	Run actions/upload-artifact@v4	2026-11-18T09:39:44.9722524Z ##[endgroup]
+verify (sqlite)	Run actions/upload-artifact@v4	2026-11-18T09:39:45.1402578Z (node:2591) [DEP0040] DeprecationWarning: The `punycode` module is deprecated. Please use a userland alternative instead.
+verify (sqlite)	Run actions/upload-artifact@v4	2026-11-18T09:39:45.1403309Z (Use `node --trace-deprecation ...` to show where the warning was created)
+verify (sqlite)	Run actions/upload-artifact@v4	2026-11-18T09:39:45.1548612Z Multiple search paths detected. Calculating the least common ancestor of all paths
+verify (sqlite)	Run actions/upload-artifact@v4	2026-11-18T09:39:45.1553871Z The least common ancestor is /home/runner/work/variant-5-modular/variant-5-modular. This will be the root directory of the artifact
+verify (sqlite)	Run actions/upload-artifact@v4	2026-11-18T09:39:45.1555546Z With the provided path, there will be 36 files uploaded
+verify (sqlite)	Run actions/upload-artifact@v4	2026-11-18T09:39:45.1558405Z Artifact name is valid!
+verify (sqlite)	Run actions/upload-artifact@v4	2026-11-18T09:39:45.1559336Z Root directory input is valid!
+verify (sqlite)	Run actions/upload-artifact@v4	2026-11-18T09:39:45.5917967Z Beginning upload of artifact content to blob storage
+verify (sqlite)	Run actions/upload-artifact@v4	2026-11-18T09:39:45.6571374Z (node:2591) [DEP0169] DeprecationWarning: `url.parse()` behavior is not standardized and prone to errors that have security implications. Use the WHATWG URL API instead. CVEs are not issued for `url.parse()` vulnerabilities.
+verify (sqlite)	Run actions/upload-artifact@v4	2026-11-18T09:39:46.0338376Z Uploaded bytes 80294
+verify (sqlite)	Run actions/upload-artifact@v4	2026-11-18T09:39:46.1124518Z Finished uploading artifact content to blob storage!
+verify (sqlite)	Run actions/upload-artifact@v4	2026-11-18T09:39:46.1125639Z SHA256 digest of uploaded artifact zip is d978c3d2ad40e93993e20812ef4252a10e4d1f80ec36677d452c3d23560ee69d
+verify (sqlite)	Run actions/upload-artifact@v4	2026-11-18T09:39:46.1127676Z Finalizing artifact upload
+verify (sqlite)	Run actions/upload-artifact@v4	2026-11-18T09:39:46.5144596Z Artifact metrics-sqlite.zip successfully finalized. Artifact ID 14416380088
+verify (sqlite)	Run actions/upload-artifact@v4	2026-11-18T09:39:46.5146158Z Artifact metrics-sqlite has been successfully uploaded! Final size is 80294 bytes. Artifact ID is 14416380088
+verify (sqlite)	Run actions/upload-artifact@v4	2026-11-18T09:39:46.5153555Z Artifact download URL: https://github.com/konstmalinin-maker/variant-5-modular/actions/runs/44277978484/artifacts/14416380088
+verify (sqlite)	Post Run actions/setup-python@v5	﻿2026-11-18T09:39:46.5346256Z Post job cleanup.
+verify (sqlite)	Post Run actions/setup-python@v5	2026-11-18T09:39:46.6551009Z (node:2603) [DEP0040] DeprecationWarning: The `punycode` module is deprecated. Please use a userland alternative instead.
+verify (sqlite)	Post Run actions/setup-python@v5	2026-11-18T09:39:46.6552230Z (Use `node --trace-deprecation ...` to show where the warning was created)
+verify (sqlite)	Post Run actions/setup-python@v5	2026-11-18T09:39:46.6766779Z [command]/usr/bin/tar --posix -cf cache.tzst --exclude cache.tzst -P -C /home/runner/work/variant-5-modular/variant-5-modular --files-from manifest.txt --use-compress-program zstdmt
+verify (sqlite)	Post Run actions/setup-python@v5	2026-11-18T09:39:47.0389493Z (node:2603) [DEP0169] DeprecationWarning: `url.parse()` behavior is not standardized and prone to errors that have security implications. Use the WHATWG URL API instead. CVEs are not issued for `url.parse()` vulnerabilities.
+verify (sqlite)	Post Run actions/setup-python@v5	2026-11-18T09:39:48.0287084Z Sent 17880316 of 17880316 (100.0%), 17.1 MBs/sec
+verify (sqlite)	Post Run actions/setup-python@v5	2026-11-18T09:39:48.5078267Z Cache saved with the key: setup-python-Linux-x64-26.04-Ubuntu-python-3.12.16-pip-eb4e4da42035a0f835330d5e1d659c4b85fde82265e7d3ac1a2c8fd7a2b84b0f
+verify (sqlite)	Post Run actions/checkout@v4	﻿2026-11-18T09:39:48.5238791Z Post job cleanup.
+verify (sqlite)	Post Run actions/checkout@v4	2026-11-18T09:39:48.6091236Z [command]/usr/bin/git version
+verify (sqlite)	Post Run actions/checkout@v4	2026-11-18T09:39:48.6125864Z git version 2.56.1
+verify (sqlite)	Post Run actions/checkout@v4	2026-11-18T09:39:48.6164102Z Temporarily overriding HOME='/home/runner/work/_temp/023ee46c-48ac-4a5d-bbc3-b1cc94cd3c67' before making global git config changes
+verify (sqlite)	Post Run actions/checkout@v4	2026-11-18T09:39:48.6165571Z Adding repository directory to the temporary git global config as a safe directory
+verify (sqlite)	Post Run actions/checkout@v4	2026-11-18T09:39:48.6168863Z [command]/usr/bin/git config --global --add safe.directory /home/runner/work/variant-5-modular/variant-5-modular
+verify (sqlite)	Post Run actions/checkout@v4	2026-11-18T09:39:48.6209581Z [command]/usr/bin/git config --local --name-only --get-regexp core\.sshCommand
+verify (sqlite)	Post Run actions/checkout@v4	2026-11-18T09:39:48.6247379Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'core\.sshCommand' && git config --local --unset-all 'core.sshCommand' || :"
+verify (sqlite)	Post Run actions/checkout@v4	2026-11-18T09:39:48.6565424Z [command]/usr/bin/git config --local --name-only --get-regexp http\.https\:\/\/github\.com\/\.extraheader
+verify (sqlite)	Post Run actions/checkout@v4	2026-11-18T09:39:48.6585641Z http.https://github.com/.extraheader
+verify (sqlite)	Post Run actions/checkout@v4	2026-11-18T09:39:48.6598580Z [command]/usr/bin/git config --local --unset-all http.https://github.com/.extraheader
+verify (sqlite)	Post Run actions/checkout@v4	2026-11-18T09:39:48.6639419Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'http\.https\:\/\/github\.com\/\.extraheader' && git config --local --unset-all 'http.https://github.com/.extraheader' || :"
+verify (sqlite)	Post Run actions/checkout@v4	2026-11-18T09:39:48.6962451Z [command]/usr/bin/git config --local --name-only --get-regexp ^includeIf\.gitdir:
+verify (sqlite)	Post Run actions/checkout@v4	2026-11-18T09:39:48.6997197Z [command]/usr/bin/git submodule foreach --recursive git config --local --show-origin --name-only --get-regexp remote.origin.url
+verify (sqlite)	Complete job	﻿2026-11-18T09:39:48.7427298Z Cleaning up orphan processes
+verify (sqlite)	Complete job	2026-11-18T09:39:48.7812633Z ##[warning]Node.js 20 is deprecated. The following actions target Node.js 20 but are being forced to run on Node.js 24: actions/checkout@v4, actions/setup-python@v5, actions/upload-artifact@v4. For more information see: https://github.blog/changelog/2025-09-19-deprecation-of-node-20-on-github-actions-runners/

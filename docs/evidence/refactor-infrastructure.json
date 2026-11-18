@@ -1,0 +1,104 @@
+{
+  "py_files": 19,
+  "production_py": 18,
+  "application_folders": 8,
+  "loc_all": 562,
+  "loc_production": 329,
+  "max_file_loc": 233,
+  "internal_imports": 22,
+  "cc_average": 2.743,
+  "cc_blocks": 35,
+  "coverage": 100.0,
+  "tests": 45,
+  "test_seconds": 0.994,
+  "edges": [
+    [
+      "database",
+      "src.infrastructure.persistence.sqlite_repository"
+    ],
+    [
+      "utils",
+      "src.domain.validation"
+    ],
+    [
+      "utils",
+      "src.domain.validation"
+    ],
+    [
+      "main",
+      "handlers"
+    ],
+    [
+      "main",
+      "models"
+    ],
+    [
+      "handlers",
+      "database"
+    ],
+    [
+      "handlers",
+      "src.application.services.university_service"
+    ],
+    [
+      "models",
+      "src.domain.entities.university"
+    ],
+    [
+      "models",
+      "src.domain.entities.university"
+    ],
+    [
+      "models",
+      "src.domain.entities.university"
+    ],
+    [
+      "models",
+      "src.domain.entities.university"
+    ],
+    [
+      "models",
+      "src.domain.entities.university"
+    ],
+    [
+      "models",
+      "src.domain.entities.university"
+    ],
+    [
+      "models",
+      "src.domain.entities.university"
+    ],
+    [
+      "models",
+      "src.domain.entities.university"
+    ],
+    [
+      "src.domain.validation",
+      "src.domain.entities.university"
+    ],
+    [
+      "src.infrastructure.persistence.sqlite_repository",
+      "src.domain.entities.university"
+    ],
+    [
+      "src.infrastructure.persistence.sqlite_repository",
+      "src.domain.repositories.university_repository"
+    ],
+    [
+      "src.application.services.university_service",
+      "src.domain.entities.university"
+    ],
+    [
+      "src.application.services.university_service",
+      "src.domain.repositories.university_repository"
+    ],
+    [
+      "src.application.services.university_service",
+      "src.domain.validation"
+    ],
+    [
+      "src.domain.repositories.university_repository",
+      "src.domain.entities.university"
+    ]
+  ]
+}

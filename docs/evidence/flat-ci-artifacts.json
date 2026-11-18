@@ -1,0 +1,45 @@
+{
+  "total_count": 2,
+  "artifacts": [
+    {
+      "id": 14416235408,
+      "node_id": "MDg6QXJ0aWZhY3QxNDQxNjIzNTQwOA==",
+      "name": "metrics-json",
+      "size_in_bytes": 48644,
+      "url": "https://api.github.com/repos/konstmalinin-maker/variant-5-flat/actions/artifacts/14416235408",
+      "archive_download_url": "https://api.github.com/repos/konstmalinin-maker/variant-5-flat/actions/artifacts/14416235408/zip",
+      "expired": false,
+      "digest": "sha256:82cf06b599e9c4799ffbdab1b72eb534cdbdac1b0a5f16fd01337025b86e9163",
+      "created_at": "2026-11-18T09:39:42Z",
+      "updated_at": "2026-11-18T09:39:42Z",
+      "expires_at": "2027-02-16T09:39:29Z",
+      "workflow_run": {
+        "id": 44277973580,
+        "repository_id": 1462577320,
+        "head_repository_id": 1462577320,
+        "head_branch": "main",
+        "head_sha": "ce022a72b9517c47c723a087d08f140e4f3819ea"
+      }
+    },
+    {
+      "id": 14416220185,
+      "node_id": "MDg6QXJ0aWZhY3QxNDQxNjIyMDE4NQ==",
+      "name": "metrics-sqlite",
+      "size_in_bytes": 48921,
+      "url": "https://api.github.com/repos/konstmalinin-maker/variant-5-flat/actions/artifacts/14416220185",
+      "archive_download_url": "https://api.github.com/repos/konstmalinin-maker/variant-5-flat/actions/artifacts/14416220185/zip",
+      "expired": false,
+      "digest": "sha256:34ec0ec689a7245007230bc3d2a531a9e6e48c0023c4ae2419f1cd576e697282",
+      "created_at": "2026-11-18T09:39:43Z",
+      "updated_at": "2026-11-18T09:39:43Z",
+      "expires_at": "2027-02-16T09:39:29Z",
+      "workflow_run": {
+        "id": 44277973580,
+        "repository_id": 1462577320,
+        "head_repository_id": 1462577320,
+        "head_branch": "main",
+        "head_sha": "ce022a72b9517c47c723a087d08f140e4f3819ea"
+      }
+    }
+  ]
+}

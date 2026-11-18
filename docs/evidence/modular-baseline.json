@@ -1,0 +1,64 @@
+{
+  "py_files": 19,
+  "production_py": 18,
+  "application_folders": 10,
+  "loc_all": 536,
+  "loc_production": 303,
+  "max_file_loc": 233,
+  "internal_imports": 12,
+  "cc_average": 2.765,
+  "cc_blocks": 34,
+  "coverage": 99.4949494949495,
+  "tests": 45,
+  "test_seconds": 1.032,
+  "edges": [
+    [
+      "main",
+      "src.presentation.cli.main"
+    ],
+    [
+      "src.infrastructure.bootstrap",
+      "src.application.services.university_service"
+    ],
+    [
+      "src.infrastructure.bootstrap",
+      "src.infrastructure.persistence.sqlite_repository"
+    ],
+    [
+      "src.domain.validation",
+      "src.domain.entities.university"
+    ],
+    [
+      "src.infrastructure.persistence.sqlite_repository",
+      "src.domain.entities.university"
+    ],
+    [
+      "src.infrastructure.persistence.sqlite_repository",
+      "src.domain.repositories.university_repository"
+    ],
+    [
+      "src.application.services.university_service",
+      "src.domain.entities.university"
+    ],
+    [
+      "src.application.services.university_service",
+      "src.domain.repositories.university_repository"
+    ],
+    [
+      "src.application.services.university_service",
+      "src.domain.validation"
+    ],
+    [
+      "src.presentation.cli.main",
+      "src.domain.entities.university"
+    ],
+    [
+      "src.presentation.cli.main",
+      "src.infrastructure.bootstrap"
+    ],
+    [
+      "src.domain.repositories.university_repository",
+      "src.domain.entities.university"
+    ]
+  ]
+}

@@ -1,0 +1,28 @@
+verify (json)	Run python scripts/check_layers.py	﻿2026-11-18T09:36:31.1165546Z ##[group]Run python scripts/check_layers.py
+verify (json)	Run python scripts/check_layers.py	2026-11-18T09:36:31.1165833Z [36;1mpython scripts/check_layers.py[0m
+verify (json)	Run python scripts/check_layers.py	2026-11-18T09:36:31.1207055Z shell: /usr/bin/bash -e {0}
+verify (json)	Run python scripts/check_layers.py	2026-11-18T09:36:31.1207270Z env:
+verify (json)	Run python scripts/check_layers.py	2026-11-18T09:36:31.1207425Z   STORAGE: json
+verify (json)	Run python scripts/check_layers.py	2026-11-18T09:36:31.1207652Z   pythonLocation: /opt/hostedtoolcache/Python/3.12.16/x64
+verify (json)	Run python scripts/check_layers.py	2026-11-18T09:36:31.1207988Z   PKG_CONFIG_PATH: /opt/hostedtoolcache/Python/3.12.16/x64/lib/pkgconfig
+verify (json)	Run python scripts/check_layers.py	2026-11-18T09:36:31.1208331Z   Python_ROOT_DIR: /opt/hostedtoolcache/Python/3.12.16/x64
+verify (json)	Run python scripts/check_layers.py	2026-11-18T09:36:31.1208641Z   Python2_ROOT_DIR: /opt/hostedtoolcache/Python/3.12.16/x64
+verify (json)	Run python scripts/check_layers.py	2026-11-18T09:36:31.1208954Z   Python3_ROOT_DIR: /opt/hostedtoolcache/Python/3.12.16/x64
+verify (json)	Run python scripts/check_layers.py	2026-11-18T09:36:31.1209250Z   LD_LIBRARY_PATH: /opt/hostedtoolcache/Python/3.12.16/x64/lib
+verify (json)	Run python scripts/check_layers.py	2026-11-18T09:36:31.1209505Z ##[endgroup]
+verify (json)	Run python scripts/check_layers.py	2026-11-18T09:36:31.1613686Z src/domain/forbidden_demo.py:2: domain -> sqlite3 запрещено
+verify (json)	Run python scripts/check_layers.py	2026-11-18T09:36:31.1669106Z ##[error]Process completed with exit code 1.
+verify (sqlite)	Run python scripts/check_layers.py	﻿2026-11-18T09:36:29.7352288Z ##[group]Run python scripts/check_layers.py
+verify (sqlite)	Run python scripts/check_layers.py	2026-11-18T09:36:29.7352668Z [36;1mpython scripts/check_layers.py[0m
+verify (sqlite)	Run python scripts/check_layers.py	2026-11-18T09:36:29.7405777Z shell: /usr/bin/bash -e {0}
+verify (sqlite)	Run python scripts/check_layers.py	2026-11-18T09:36:29.7406045Z env:
+verify (sqlite)	Run python scripts/check_layers.py	2026-11-18T09:36:29.7406239Z   STORAGE: sqlite
+verify (sqlite)	Run python scripts/check_layers.py	2026-11-18T09:36:29.7406520Z   pythonLocation: /opt/hostedtoolcache/Python/3.12.16/x64
+verify (sqlite)	Run python scripts/check_layers.py	2026-11-18T09:36:29.7406964Z   PKG_CONFIG_PATH: /opt/hostedtoolcache/Python/3.12.16/x64/lib/pkgconfig
+verify (sqlite)	Run python scripts/check_layers.py	2026-11-18T09:36:29.7407398Z   Python_ROOT_DIR: /opt/hostedtoolcache/Python/3.12.16/x64
+verify (sqlite)	Run python scripts/check_layers.py	2026-11-18T09:36:29.7407780Z   Python2_ROOT_DIR: /opt/hostedtoolcache/Python/3.12.16/x64
+verify (sqlite)	Run python scripts/check_layers.py	2026-11-18T09:36:29.7408175Z   Python3_ROOT_DIR: /opt/hostedtoolcache/Python/3.12.16/x64
+verify (sqlite)	Run python scripts/check_layers.py	2026-11-18T09:36:29.7408565Z   LD_LIBRARY_PATH: /opt/hostedtoolcache/Python/3.12.16/x64/lib
+verify (sqlite)	Run python scripts/check_layers.py	2026-11-18T09:36:29.7408886Z ##[endgroup]
+verify (sqlite)	Run python scripts/check_layers.py	2026-11-18T09:36:29.7887693Z src/domain/forbidden_demo.py:2: domain -> sqlite3 запрещено
+verify (sqlite)	Run python scripts/check_layers.py	2026-11-18T09:36:29.7960349Z ##[error]Process completed with exit code 1.
