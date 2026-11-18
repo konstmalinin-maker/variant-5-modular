@@ -1,0 +1,96 @@
+{
+  "py_files": 28,
+  "production_py": 23,
+  "application_folders": 12,
+  "loc_all": 935,
+  "loc_production": 413,
+  "max_file_loc": 284,
+  "internal_imports": 20,
+  "cc_average": 2.733,
+  "cc_blocks": 45,
+  "coverage": 99.29078014184397,
+  "tests": 63,
+  "test_seconds": 1.203,
+  "edges": [
+    [
+      "main",
+      "src.presentation.cli.main"
+    ],
+    [
+      "src.infrastructure.bootstrap",
+      "src.application.services.university_service"
+    ],
+    [
+      "src.infrastructure.bootstrap",
+      "src.domain.entities.university"
+    ],
+    [
+      "src.infrastructure.bootstrap",
+      "src.domain.repositories.university_repository"
+    ],
+    [
+      "src.infrastructure.bootstrap",
+      "src.infrastructure.di.container"
+    ],
+    [
+      "src.infrastructure.bootstrap",
+      "src.infrastructure.persistence.json_repository"
+    ],
+    [
+      "src.infrastructure.bootstrap",
+      "src.infrastructure.persistence.sqlite_repository"
+    ],
+    [
+      "src.domain.validation",
+      "src.domain.entities.university"
+    ],
+    [
+      "src.infrastructure.persistence.json_repository",
+      "src.domain.entities.university"
+    ],
+    [
+      "src.infrastructure.persistence.json_repository",
+      "src.domain.repositories.university_repository"
+    ],
+    [
+      "src.infrastructure.persistence.sqlite_repository",
+      "src.domain.entities.university"
+    ],
+    [
+      "src.infrastructure.persistence.sqlite_repository",
+      "src.domain.repositories.university_repository"
+    ],
+    [
+      "src.application.use_cases.export_csv",
+      "src.application.services.university_service"
+    ],
+    [
+      "src.application.services.university_service",
+      "src.domain.entities.university"
+    ],
+    [
+      "src.application.services.university_service",
+      "src.domain.repositories.university_repository"
+    ],
+    [
+      "src.application.services.university_service",
+      "src.domain.validation"
+    ],
+    [
+      "src.presentation.cli.main",
+      "src.application.use_cases.export_csv"
+    ],
+    [
+      "src.presentation.cli.main",
+      "src.domain.entities.university"
+    ],
+    [
+      "src.presentation.cli.main",
+      "src.infrastructure.bootstrap"
+    ],
+    [
+      "src.domain.repositories.university_repository",
+      "src.domain.entities.university"
+    ]
+  ]
+}

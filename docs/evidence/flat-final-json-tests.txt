@@ -1,0 +1,17 @@
+..................................................                       [100%]
+================================ tests coverage ================================
+_______________ coverage: platform linux, python 3.12.14-final-0 _______________
+
+Name                 Stmts   Miss  Cover   Missing
+--------------------------------------------------
+database.py             33      0   100%
+handlers.py             83      0   100%
+json_repository.py      28      0   100%
+main.py                 48      0   100%
+models.py               31      0   100%
+utils.py                10      0   100%
+--------------------------------------------------
+TOTAL                  233      0   100%
+Coverage JSON written to file coverage.json
+Required test coverage of 80% reached. Total coverage: 100.00%
+50 passed in 0.58s

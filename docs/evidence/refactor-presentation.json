@@ -1,0 +1,116 @@
+{
+  "py_files": 23,
+  "production_py": 22,
+  "application_folders": 10,
+  "loc_all": 576,
+  "loc_production": 343,
+  "max_file_loc": 233,
+  "internal_imports": 25,
+  "cc_average": 2.694,
+  "cc_blocks": 36,
+  "coverage": 99.52830188679245,
+  "tests": 45,
+  "test_seconds": 0.931,
+  "edges": [
+    [
+      "database",
+      "src.infrastructure.persistence.sqlite_repository"
+    ],
+    [
+      "utils",
+      "src.domain.validation"
+    ],
+    [
+      "utils",
+      "src.domain.validation"
+    ],
+    [
+      "main",
+      "src.presentation.cli.main"
+    ],
+    [
+      "handlers",
+      "database"
+    ],
+    [
+      "handlers",
+      "src.application.services.university_service"
+    ],
+    [
+      "models",
+      "src.domain.entities.university"
+    ],
+    [
+      "models",
+      "src.domain.entities.university"
+    ],
+    [
+      "models",
+      "src.domain.entities.university"
+    ],
+    [
+      "models",
+      "src.domain.entities.university"
+    ],
+    [
+      "models",
+      "src.domain.entities.university"
+    ],
+    [
+      "models",
+      "src.domain.entities.university"
+    ],
+    [
+      "models",
+      "src.domain.entities.university"
+    ],
+    [
+      "models",
+      "src.domain.entities.university"
+    ],
+    [
+      "src.infrastructure.bootstrap",
+      "src.application.services.university_service"
+    ],
+    [
+      "src.infrastructure.bootstrap",
+      "src.infrastructure.persistence.sqlite_repository"
+    ],
+    [
+      "src.domain.validation",
+      "src.domain.entities.university"
+    ],
+    [
+      "src.infrastructure.persistence.sqlite_repository",
+      "src.domain.entities.university"
+    ],
+    [
+      "src.infrastructure.persistence.sqlite_repository",
+      "src.domain.repositories.university_repository"
+    ],
+    [
+      "src.application.services.university_service",
+      "src.domain.entities.university"
+    ],
+    [
+      "src.application.services.university_service",
+      "src.domain.repositories.university_repository"
+    ],
+    [
+      "src.application.services.university_service",
+      "src.domain.validation"
+    ],
+    [
+      "src.presentation.cli.main",
+      "src.domain.entities.university"
+    ],
+    [
+      "src.presentation.cli.main",
+      "src.infrastructure.bootstrap"
+    ],
+    [
+      "src.domain.repositories.university_repository",
+      "src.domain.entities.university"
+    ]
+  ]
+}

@@ -1,0 +1,10 @@
+https://github.com/konstmalinin-maker/variant-5-modular/pull/1
+github-actions[bot]:
+<!-- metrics-json -->
+Backend: **json** | Tests: **63** | Coverage: **99.65%** | Average CC: **2.733** | Internal imports: **20** | Test time: **0.793 s**.
+Layer check: passed. Full data: Actions artifact `metrics-json`.
+
+github-actions[bot]:
+<!-- metrics-sqlite -->
+Backend: **sqlite** | Tests: **63** | Coverage: **99.29%** | Average CC: **2.733** | Internal imports: **20** | Test time: **1.275 s**.
+Layer check: passed. Full data: Actions artifact `metrics-sqlite`.

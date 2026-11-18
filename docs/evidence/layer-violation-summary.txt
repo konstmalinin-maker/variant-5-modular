@@ -1,0 +1,7 @@
+GitHub Actions: 44277479634
+Deliberate commit: 99a8d7a
+2026-11-18T09:36:31.1613686Z src/domain/forbidden_demo.py:2: domain -> sqlite3 запрещено
+2026-11-18T09:36:31.1669106Z ##[error]Process completed with exit code 1.
+2026-11-18T09:36:29.7887693Z src/domain/forbidden_demo.py:2: domain -> sqlite3 запрещено
+2026-11-18T09:36:29.7960349Z ##[error]Process completed with exit code 1.
+Fixed by commit: b4492b7

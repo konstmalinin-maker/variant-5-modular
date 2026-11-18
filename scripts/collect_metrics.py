@@ -33,7 +33,16 @@ for p in prod:
 cov = json.loads((root / "coverage.json").read_text())
 cases = ET.parse(root / "junit.xml").findall(".//testcase")
 suites = ET.parse(root / "junit.xml").findall(".//testsuite")
+all_folders = {
+    str(d.relative_to(root))
+    for d in root.rglob("*")
+    if d.is_dir()
+    and not any(
+        x in d.parts for x in (".git", "__pycache__", ".pytest_cache", ".ruff_cache", ".venv", "htmlcov")
+    )
+}
 data = {
+    "folders_total": len(all_folders),
     "py_files": len(files),
     "production_py": len(prod),
     "application_folders": len({str(p.parent.relative_to(root)) for p in prod if p.parent != root}),

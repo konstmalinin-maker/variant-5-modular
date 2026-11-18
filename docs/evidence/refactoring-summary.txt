@@ -1,0 +1,9 @@
+254e4df refactor(presentation): extract layer while preserving all contract tests
+137643a refactor(infrastructure): extract layer while preserving all contract tests
+bdf2671 refactor(application): extract layer while preserving all contract tests
+292a0fa refactor(domain): extract layer while preserving all contract tests
+
+domain: 45 passed in 0.95s; coverage=98.50%
+application: 45 passed in 0.83s; coverage=100.00%
+infrastructure: 45 passed in 0.99s; coverage=100.00%
+presentation: 45 passed in 0.92s; coverage=99.53%

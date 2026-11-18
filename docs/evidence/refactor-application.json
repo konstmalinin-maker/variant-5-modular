@@ -1,0 +1,96 @@
+{
+  "py_files": 16,
+  "production_py": 15,
+  "application_folders": 6,
+  "loc_all": 558,
+  "loc_production": 325,
+  "max_file_loc": 233,
+  "internal_imports": 20,
+  "cc_average": 2.743,
+  "cc_blocks": 35,
+  "coverage": 100.0,
+  "tests": 45,
+  "test_seconds": 0.794,
+  "edges": [
+    [
+      "database",
+      "models"
+    ],
+    [
+      "utils",
+      "src.domain.validation"
+    ],
+    [
+      "utils",
+      "src.domain.validation"
+    ],
+    [
+      "main",
+      "handlers"
+    ],
+    [
+      "main",
+      "models"
+    ],
+    [
+      "handlers",
+      "database"
+    ],
+    [
+      "handlers",
+      "src.application.services.university_service"
+    ],
+    [
+      "models",
+      "src.domain.entities.university"
+    ],
+    [
+      "models",
+      "src.domain.entities.university"
+    ],
+    [
+      "models",
+      "src.domain.entities.university"
+    ],
+    [
+      "models",
+      "src.domain.entities.university"
+    ],
+    [
+      "models",
+      "src.domain.entities.university"
+    ],
+    [
+      "models",
+      "src.domain.entities.university"
+    ],
+    [
+      "models",
+      "src.domain.entities.university"
+    ],
+    [
+      "models",
+      "src.domain.entities.university"
+    ],
+    [
+      "src.domain.validation",
+      "src.domain.entities.university"
+    ],
+    [
+      "src.application.services.university_service",
+      "src.domain.entities.university"
+    ],
+    [
+      "src.application.services.university_service",
+      "src.domain.repositories.university_repository"
+    ],
+    [
+      "src.application.services.university_service",
+      "src.domain.validation"
+    ],
+    [
+      "src.domain.repositories.university_repository",
+      "src.domain.entities.university"
+    ]
+  ]
+}

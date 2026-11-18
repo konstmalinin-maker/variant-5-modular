@@ -1,0 +1,53 @@
+{
+  "folders_total": 4,
+  "py_files": 9,
+  "production_py": 6,
+  "application_folders": 0,
+  "loc_all": 766,
+  "loc_production": 333,
+  "max_file_loc": 284,
+  "internal_imports": 9,
+  "cc_average": 3.057,
+  "cc_blocks": 35,
+  "coverage": 100.0,
+  "tests": 50,
+  "test_seconds": 0.588,
+  "edges": [
+    [
+      "database",
+      "models"
+    ],
+    [
+      "utils",
+      "models"
+    ],
+    [
+      "json_repository",
+      "models"
+    ],
+    [
+      "main",
+      "handlers"
+    ],
+    [
+      "main",
+      "models"
+    ],
+    [
+      "handlers",
+      "database"
+    ],
+    [
+      "handlers",
+      "json_repository"
+    ],
+    [
+      "handlers",
+      "models"
+    ],
+    [
+      "handlers",
+      "utils"
+    ]
+  ]
+}

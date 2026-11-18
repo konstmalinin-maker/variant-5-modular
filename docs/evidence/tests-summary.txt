@@ -1,0 +1,12 @@
+Результаты локальной проверки (Python 3.12 / Linux)
+Версия    Backend    Тестов   Покрытие    Время JUnit
+flat      sqlite       50     99.57%    0.992 с
+flat      json         50    100.00%    0.588 с
+
+flat main CI: success
+https://github.com/konstmalinin-maker/variant-5-flat/actions/runs/44277973580
+modular   sqlite       63     99.29%    1.203 с
+modular   json         63     99.65%    0.801 с
+
+modular main CI: success
+https://github.com/konstmalinin-maker/variant-5-modular/actions/runs/44277978484
