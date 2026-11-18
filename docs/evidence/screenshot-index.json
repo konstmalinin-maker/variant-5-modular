@@ -1,0 +1,29 @@
+{
+  "main": [
+    "09-flat-tests-live.png",
+    "10-modular-tests-live.png"
+  ],
+  "A": [
+    "11-layer-check-live.png"
+  ],
+  "B": [
+    "17-refactoring-tests-live.png"
+  ],
+  "C": [
+    "12-di-tests-live.png"
+  ],
+  "D": [
+    "16-c4-generation-live.png"
+  ],
+  "E": [
+    "13-radon-pydeps-live.png"
+  ],
+  "F": [
+    "06-pr-metrics.png",
+    "04-layer-violation.png"
+  ],
+  "G": [
+    "14-sqlite-cli-live.png",
+    "15-json-cli-live.png"
+  ]
+}
