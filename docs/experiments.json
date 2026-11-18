@@ -1,0 +1,46 @@
+{
+  "flat": {
+    "navigation_seconds": [
+      0.02320552399942244,
+      0.009994553000069573,
+      0.022141604998978437
+    ],
+    "navigation_mean": 0.018447227332823484,
+    "found": "./handlers.py",
+    "export_edit_seconds": 0.0039870709988463204,
+    "export_changed_paths": [
+      "handlers.py",
+      "main.py",
+      "test_all.py"
+    ],
+    "storage_edit_seconds": 0.000718672999937553,
+    "storage_changed_paths": [
+      "handlers.py",
+      "pyproject.toml",
+      "json_repository.py"
+    ],
+    "navigation_command": "rg -l 'def enroll\\(' --glob '*.py' ."
+  },
+  "modular": {
+    "navigation_seconds": [
+      0.15719813400028215,
+      0.009091040999919642,
+      0.006104686999606201
+    ],
+    "navigation_mean": 0.05746462066660266,
+    "found": "./src/application/services/university_service.py",
+    "export_edit_seconds": 0.004404002000228502,
+    "export_changed_paths": [
+      "src/presentation/cli/main.py",
+      "tests/test_contract.py",
+      "src/application/use_cases/__init__.py",
+      "src/application/use_cases/export_csv.py"
+    ],
+    "storage_edit_seconds": 0.0003406200012250338,
+    "storage_changed_paths": [
+      "src/infrastructure/bootstrap.py",
+      "src/infrastructure/persistence/json_repository.py"
+    ],
+    "navigation_command": "rg -l 'def enroll\\(' --glob '*.py' ."
+  }
+}

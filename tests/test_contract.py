@@ -231,3 +231,54 @@ def test_cli_subprocess(tmp_path):
         timeout=10,
     )
     assert result.returncode == 0 and len(result.stdout.strip()) == 36
+
+
+def test_csv_export(enrolled, tmp_path):
+    import csv
+
+    from src.application.use_cases.export_csv import export_to_csv
+
+    svc, s, c = enrolled
+    path = tmp_path / "plan.csv"
+    assert export_to_csv(svc, s.id, path) == 1
+    with path.open(encoding="utf-8-sig", newline="") as stream:
+        rows = list(csv.reader(stream))
+    assert rows[0] == ["course_id", "title", "credits", "grade"]
+    assert rows[1] == [c.id, c.title, str(c.credits), ""]
+
+
+def test_cli_export(enrolled, tmp_path, monkeypatch, capsys):
+    _, s, _ = enrolled
+    monkeypatch.setenv("DATA_PATH", str(tmp_path / "university.sqlite3"))
+    path = tmp_path / "out.csv"
+    assert main(["export", s.id, str(path)]) == 0
+    assert "Экспортировано: 1" in capsys.readouterr().out
+
+
+def test_json_atomic_replace(tmp_path):
+    from src.infrastructure.persistence.json_repository import JSONRepository
+
+    repo = JSONRepository(tmp_path / "n.json")
+    repo.save(State())
+    before = repo.path.read_bytes()
+    with patch("src.infrastructure.persistence.json_repository.os.replace", side_effect=OSError("disk")):
+        with pytest.raises(StorageError):
+            repo.save(State())
+    assert repo.path.read_bytes() == before and not list(tmp_path.glob("*.tmp"))
+
+
+def test_bad_json(tmp_path):
+    from src.infrastructure.persistence.json_repository import JSONRepository
+
+    path = tmp_path / "n.json"
+    path.write_text("{")
+    with pytest.raises(StorageError):
+        JSONRepository(path).load()
+    with pytest.raises(StorageError):
+        JSONRepository(tmp_path / "missing" / "n.json").save(State())
+
+
+def test_unknown_backend(tmp_path, monkeypatch):
+    monkeypatch.setenv("STORAGE", "unknown")
+    with pytest.raises(ValidationError):
+        build_service(tmp_path / "n.data")
